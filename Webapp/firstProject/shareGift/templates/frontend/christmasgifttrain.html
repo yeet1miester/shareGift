@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>gifttrain</title>
+        {%load static%}
+    </head>
+    <style>
+        .header{text-align:center; position:relative;  margin-bottom: 10px; border-bottom: solid salmon; }
+        .but{position: relative; right:18%; top: 1%;}
+        .but1{position: relative; left:20%; top: 1%;}
+        .subheader{ font-size: 200%;color:black; background-color: #e7e6e6ff;}
+        .writing{font-size: 80%;margin-left: 10%; margin-right: 5%;}
+         .images{position: relative; left:3vh}
+         .learnmore{position: relative; top:10%; left:25%; width: 50%; height: 5%; font-size: 150%; background-color: #ffd966ff;}
+         .next{position:fixed; top:70%; right:10%; width: 40%; height:10%; font-size: 200%;}
+   </style>
+    <body>
+        <div class = "header">
+            <a class="but"><!-- 퍼센트로 바꾸기--> <!--vh: 디바이스의 높이에 따라 사이즈가 바뀜-->
+                <img src= "https://css-tricks.com/wp-content/uploads/2012/10/threelines.png" width="100vh" height = "100vh">
+            </a>
+            <a href="/">
+                <img src= "{% static 'img/sharegiftlogo.jpg'%}" width="350vh" height="150vh">
+            </a>
+            <a class = "but1">
+                <img src="{% static 'img/person.png'%}" width="100vh" height="100vh">
+            </a>
+            <br>
+            <br>
+        </div>
+        <div class= "subheader">
+        <br>
+        <br>
+        <div>
+            SHARE GIFT CHRISTMAS GIFTTRAIN
+        </div>
+        <br>
+        <br>
+        </div>
+        <br>
+        <ol class= "writing">
+            <li>
+                Prepare Christmas Presents
+            </li>
+            <li>
+                Put “Share Gift” Logo
+
+            </li>
+            <li>
+                Go to Cupertino Healthcare & Wellness Center(Any time)
+
+            </li>
+            <li>
+                Knock Knock!! (You are not supposed to go inside)
+
+            </li>
+            <li>
+                The staff will come out and greet you
+            </li>
+            <li>
+                Say you are from Share Gift Volunteer Group and you are here to donate gifts!
+            </li>
+
+        </ol>
+        <br>
+        <button class= "learnmore" onclick = "location.href='https:www.mealtrain.com/trains/d3qedl'">
+            MORE ABOUT 2020 GIFTTRAIN
+        </button>
+        <button class="next" onclick = "location.href='/response'">
+            Next
+        </button>  
+    </div>    
+    </body>
+</html>

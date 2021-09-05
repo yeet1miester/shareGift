@@ -1,0 +1,27 @@
+@charset "UTF-8"
+<style>
+        *{
+            margin: 10px auto;
+            /*가운데 정렬 (margin 0 auto)*/
+        }
+        h1{
+            color:aqua; 
+            
+        }
+        .red{
+            color: red;
+        }
+        h2{
+            border: 5px solid salmon;
+        }
+        .you{
+            border: 10px dotted black;  
+            font-size:  100px;
+            width : 80%;
+        }
+        div{
+            background-color: aquamarine;
+            color: green;
+
+        }
+    </style>

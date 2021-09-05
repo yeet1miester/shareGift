@@ -1,0 +1,228 @@
+<!DOCTYPE html> <!--이것이 문서이다 라고 선언하는것-->
+<html>
+    <head>
+        <meta charset="UTF-8"> <!-- 인코딩 언어를 세팅해준다-->
+        <!-- 전체 body 가 document-->
+        <title>Share Gift</title>
+        <!--<link rel="stylesheet"href="C:\Users\Andyc\OneDrive\Documents\Webapp\static\css\start.css">-->
+    </head>
+    <style>
+        .header{text-align:center; position:relative;  margin-bottom: 10px; border-bottom: solid salmon;}
+        .but{position: relative; right:15%; top: 1%;}
+        .but1{position: relative; left:15%; top: 1%;}
+        .Aboutus{
+            width:30% ; 
+            height: 20%;
+            position:absolute; 
+            top: 43%; left:15%;
+            font-size: 50px;
+            font-family: 'Times New Roman', Times, serif;
+            color:blanchedalmond;
+            background-color: crimson;
+        }
+        .Volunteering{
+            width:30%; 
+            height: 20%;
+            position:absolute; 
+            top: 43%; right: 15%;
+            font-size: 50px;
+            font-family: 'Times New Roman', Times, serif;
+            color:blanchedalmond;
+            background-color: crimson;
+        }
+        .Publications{
+            width:30%; 
+            height: 20%;
+            position:absolute; 
+            top: 68%; left: 15%;
+            font-size: 50px;
+            font-family: 'Times New Roman', Times, serif;
+            color:blanchedalmond;
+            background-color: crimson;
+        }
+        .Branches{
+            width:30%; 
+            height:20%;
+            position:absolute; 
+            top: 68%; right: 15%;
+            font-size: 50px;
+            font-family: 'Times New Roman', Times, serif;
+            color:blanchedalmond;
+            background-color: crimson;
+        }
+    </style>
+    <body>
+        <!-- <div> = println( takes up whole thing--takes up 1 line )-->
+        <!--<span> = print(takes up only few space-- takes up only the characters typed)-->
+        <!--<p>= <div>( It takes up more space than <div>-- takes up 3 lines) -->
+        <!--<button> = creates button-->
+        <!-- Input is not closed -->
+        <!--<br/> = enter-->
+        <!--<hr/> = draws a line and enters-->
+        <!-- <label> = creates text in front of button-->
+            <h1>hello</h1>
+            <h1>hello</h1>
+            <h1 class= "red">hello</h1>
+            <h1>hello</h1>
+            <h1>hello</h1>
+            <h2>hello</h2>
+            <h3>hello</h3>
+            <div>
+                Hello
+            </div>
+            <div>
+                Im making a web
+            </div>
+            <span>
+                This 
+            </span>
+            <span>
+                connects horizontally
+            </span>
+            <p>
+                This is like div
+            </p>
+            <button>
+                Click me
+            </button>
+            <textarea>
+                Hello
+                We are creating a web
+            </textarea>
+            <br>
+            <form method= "POST"><!-- Get= shows ID/password, POST = doesn't show, the norm is get-->
+                <label name = "ID">
+                    아이디
+                </label>
+                <input type="text" name = "ID"/>    
+                <hr/>
+                <label name = "password">
+                    PW
+                </label>
+                <input type = "password" name = "password"/>
+                <input type="submit" name = "submit" value = "login"/> <!-- name = grouping, value = the showing-->
+                <input type = "email"/><!-- doesn't let things without @ pass-->
+                <label>
+                    do you have symptoms
+                </label>
+                <input type = "radio"/>
+                <input type = "checkbox"/>
+                <input type = "datetime"/>      
+            </form>
+            <hr/>
+            <input type = "text" value = "you can't delete" readonly/><!--readonly lets you not delete-->
+            <br/>   
+            <img src= "">
+            <label name= "range">
+                1 100
+            </label>
+        <nav class = "w3-bar w3-black">
+            <a href="test.html"><!-- 링크연결-->
+                volunteer
+            </a>
+        </nav>
+        <h2 class = "you"> 목록 태그</h2>
+        <ul>
+            <li>
+                hello1
+            </li>
+            <li>
+                hello2
+            </li>
+            <li>
+                hello3
+            </li>
+
+        </ul><!-- unordered--><!-- li= list-->
+        <ol>
+            <li>
+                hello1
+            </li>
+            <li>
+                hello2
+            </li>
+            <li>
+                hello3
+            </li>
+        </ol><!-- ordered-->
+        <table>
+            <tr><!-- row-->
+                <th>
+                   key <!-- 제목-->
+                </th>
+                <td>
+                    value
+                </td>
+                <td>
+                    value1
+                </td>
+                
+            </tr>
+            <tr><!-- row-->
+                <th>
+                    header<!-- 제목-->
+                </th>
+                <td>
+                    value3
+                </td>
+                <td>
+                    value4
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <th>
+                    key
+                </th>
+                <th>
+                    header
+                </th>
+            </tr>
+            <tr>
+                <td>
+                    1
+                </td>
+                <td>
+                    2
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    3
+                </td>
+                <td>
+                    4
+                </td>
+            </tr>
+        </table>
+        <hr>
+        <select><option> 치킨</option> <option>피자</option> </select><!-- selections-->
+        <form>
+            <fieldset>
+                <legend><!-- 겉부분-->
+                    회원가입
+                </legend>
+                <table>
+                    <tr>
+                    <td><label name = "ID">
+                        ID
+                    </label>
+                    </td>
+                    <td><input type= "email" name = "ID"></td>
+                    <br>
+                    </tr>
+                    <tr>
+                    <td><label name = "PW">
+                        password
+                    </label>
+                    </td>
+                    <td><input type = "text" name = "PW"></td>
+                    </tr>
+                </table>
+            
+
+            </fieldset>
+        </form>
+    </body>
+</html>

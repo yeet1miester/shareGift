@@ -1,0 +1,47 @@
+@charset "UTF-8"
+<style>
+        .header{text-align:center; position:relative;  margin-bottom: 10px; border-bottom: solid salmon;}
+        .but{position: relative; right:15%; top: 1%;}
+        .but1{position: relative; left:15%; top: 1%;}
+        .Aboutus{
+            width:30% ; 
+            height: 20%;
+            position:absolute; 
+            top: 43%; left:15%;
+            font-size: 50px;
+            font-family: 'Times New Roman', Times, serif;
+            color:blanchedalmond;
+            background-color: crimson;
+        }
+        
+        .Volunteering{
+            width:30%; 
+            height: 20%;
+            position:absolute; 
+            top: 43%; right: 15%;
+            font-size: 50px;
+            font-family: 'Times New Roman', Times, serif;
+            color:blanchedalmond;
+            background-color: crimson;
+        }
+        .Publications{
+            width:30%; 
+            height: 20%;
+            position:absolute; 
+            top: 68%; left: 15%;
+            font-size: 50px;
+            font-family: 'Times New Roman', Times, serif;
+            color:blanchedalmond;
+            background-color: crimson;
+        }
+        .Branches{
+            width:30%; 
+            height:20%;
+            position:absolute; 
+            top: 68%; right: 15%;
+            font-size: 50px;
+            font-family: 'Times New Roman', Times, serif;
+            color:blanchedalmond;
+            background-color: crimson;
+        }
+    </style>

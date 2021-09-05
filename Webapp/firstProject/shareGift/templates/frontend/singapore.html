@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>singaporebranch</title>
+        {%load static%}
+    </head>
+    <style>
+        .header{text-align:center; position:relative;  margin-bottom: 10px; border-bottom: solid salmon; }
+        .but{position: relative; right:18%; top: 1%;}
+        .but1{position: relative; left:20%; top: 1%;}
+        .red{ font-size: 500%; background-color: #d3d3d3ff;}
+        .sub{font-size: 60%;}
+        .Writing{margin-left: 10%;}
+        .b1{font-size: 200%; position: relative; top:50%; left:40%}
+        .link{position: relative; left:25%; color: blue}
+    </style>
+    <body>
+        <div class = "header">
+            <a class="but"><!-- 퍼센트로 바꾸기--> <!--vh: 디바이스의 높이에 따라 사이즈가 바뀜-->
+                <img src= "https://css-tricks.com/wp-content/uploads/2012/10/threelines.png" width="100vh" height = "100vh">
+            </a>
+            <a href="/">
+                <img src= "{% static 'img/sharegiftlogo.jpg'%}" width="350vh" height="150vh">
+            </a>
+            <a class = "but1">
+                <img src="{% static 'img/person.png'%}" width="100vh" height="100vh">
+            </a>
+            <br>
+            <br>
+        </div>
+        <br>
+        <br>
+        <div class="red">
+            <div class="sub">
+                Singapore Branch
+            </div>
+            <br>
+            <div class="sub">
+            Support Education for Laotian Children
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="Writing">
+            Share Gift Singapore Branch’s mission is to uphold social justice and constitutional rights. Though the size of a ask is large, resources are not. Because of this, we rely heavily on volunteers and interns to help make our goals a reality. Put on an local event or crowd-fund through one of our partner sites – we would love the extra boost!
+
+        </div>
+        <br>
+        <div class="link" onclick="location.href='/base'">
+        visit the Singapore branch here</div>
+        <br>
+        <br>
+        <br>
+        <button class="b1" onclick= "location.href='/branches'">
+            Back
+        </button>
+</body> 
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Branches</title>
+        {%load static%}
+    </head>
+    <style>
+        .header{text-align:center; position:relative;  margin-bottom: 10px; border-bottom: solid salmon; }
+        .but{position: relative; right:15%; top: 1%;}
+        .but1{position: relative; left:15%; top: 1%;}
+        .red{background-color: #ad446eff; color: white; font-size: 500%;}
+        .white{font-size: 500%; background-color: mistyrose;}
+        .sub{color:white; font-size: 60%;}
+        .sub1{font-size:60%}
+        .b1{font-size: 80%; position:relative; left:50%}
+        .b2{ font-size:80%; position:relative; left:50%; background-color: #6e73cbff; color: white}
+    </style>
+    <body>
+        <div class = "header">
+            <a class="but"><!-- 퍼센트로 바꾸기--> <!--vh: 디바이스의 높이에 따라 사이즈가 바뀜-->
+                <img src= "https://css-tricks.com/wp-content/uploads/2012/10/threelines.png" width="100vh" height = "100vh">
+            </a>
+            <a href="/">
+                <img src= "{% static 'img/sharegiftlogo.jpg'%}" width="350vh" height="150vh">
+            </a>
+            <a class = "but1">
+                <img src="{% static 'img/person.png'%}" width="100vh" height="100vh">
+            </a>
+            <br>
+            <br>
+        </div>
+        <br>
+        <br>
+        <br>
+
+        <div class="red">
+            <div>
+                Seoul Branch
+            </div>
+            <br>
+            <div class="sub">
+                Support Education for Laotian Children
+            </div>
+            <button class="b1" onclick= "location.href='/seoul'">
+                more
+            </button>
+        </div>
+        <br>
+        <br>
+        <div class="white">
+            <div>
+                Singapore Branch
+            </div>
+            <br>
+            <div class="sub1">
+                ​Support Social Justice with Arts
+            </div>
+            <br>
+            <button class="b2" onclick="location.href='/singapore'">
+                more
+            </button>
+        </div>
+        <br>
+        <br>
+        <div class="red">
+            <div>
+                Baekhyun Branch
+            </div>
+            <br>
+            <div class="sub">
+                Support Mental Health in Sri Lanka
+            </div>
+            <br>
+            <button class="b1" onclick="location.href='/baekhyun'">
+                more
+            </button>
+        </div>
+    </body>
+</html>

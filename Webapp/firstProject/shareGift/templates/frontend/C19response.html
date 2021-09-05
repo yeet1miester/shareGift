@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>mealtrain</title>
+    </head>
+    <style>
+        .header{text-align:center; position:relative;  margin-bottom: 10px; border-bottom: solid salmon; }
+        .but{position: relative; right:18%; top: 1%;}
+        .but1{position: relative; left:20%; top: 1%;}
+        .writing{font-size: 80%;margin-left: 10%; margin-right: 5%;}
+         .images{position: relative; left:3vh}
+        .vline{position: fixed; top: 10%;left:50%;bottom:0;margin:0;border:none; border-right: solid 10px blue;z-index:10; size: 80%; overflow: hidden;}
+        .b1{position: fixed; top:15%; left:15%; width: 60%; height: 10%; background-color: #6e73cbff; font-size: 300%; color: white}
+        .b2{position: fixed; top:30%; right:15%; width: 60%; height: 10%;  font-size: 300%}
+        .b3{position:fixed; top: 45%; left:15%; width: 60%; height: 10%; background-color: #6e73cbff;font-size: 300%; color: white}
+        .b4{position:fixed; top: 60%; right:15%; width: 60%; height: 10%;font-size: 300%}
+        .b5{position:fixed; top: 75%; left:15%; width: 60%; height: 10%; background-color: #6e73cbff;font-size: 300%; color: white}
+   </style>
+    <body>
+        <div class = "header">
+            <a class="but"><!-- 퍼센트로 바꾸기--> <!--vh: 디바이스의 높이에 따라 사이즈가 바뀜-->
+                <img src= "https://css-tricks.com/wp-content/uploads/2012/10/threelines.png" width="100vh" height = "100vh">
+            </a>
+            <a href="/">
+                <img src= "{% static 'img/sharegiftlogo.jpg'%}" width="350vh" height="150vh">
+            </a>
+            <a class = "but1">
+                <img src="{% static 'img/person.png'%}" width="100vh" height="100vh">
+            </a>
+            <br>
+            <br>
+        </div>
+        <hr class="vline">
+        <button class= "b1" onclick= "location.href='/mealtrain'">
+            Mealtrain
+        </button>
+        <button class= "b2" onclick= "location.href='/donate'">
+            COVID19 HANDLESS HANDLE DONATION
+        </button>
+        <button class= "b3" onclick= "location.href='/peertutoring'">
+            ShareGift peer tutoring
+        </button>
+        <button class= "b4" onclick= "location.href='/pandemictimes'">
+            Pandemic Times News
+        </button>
+        <button class= "b5" onclick= "location.href='/christmas'">
+            Christmas Gift Train
+        </button>
+    </div>    
+    </body>
+</html>
