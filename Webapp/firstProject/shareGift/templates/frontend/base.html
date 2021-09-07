@@ -11,59 +11,79 @@
         <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
          <!--script-->
         <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script> 
+        <script src="{% static 'js/scrolla.jquery.min.js' %}"></script>
         <script src="{% static 'js/slick.min.js' %}"></script>
         <script src="{% static 'js/script.js' %}"></script>
     </head>
     <style>
-        .header{text-align:center; position:relative;  margin-bottom: 10px; border-bottom: solid salmon; }
-        .but{position: relative; right:15%; top: 1%;}
-        .but1{position: relative; left:15%; top: 1%;}
+        .header{text-align:center;  border-bottom: solid salmon; height: 20%; }
+        /* .but1{position: relative; left:15%; top: 1%;} */
         .Aboutus{
             width:30%; 
-            height: 20%;
+            height: 15%;
             position:absolute; 
-            top: 43%; left:15%;
+            top: 60%; left:15%;
             font-size: 50px;
             font-family: 'Times New Roman', Times, serif;
             color:blanchedalmond;
-            background-color: crimson;
+            background-color: #9B1D4F;
         }
         .Volunteering{
             width:30%; 
-            height: 20%;
+            height:15%;
             position:absolute; 
-            top: 43%; right: 15%;
+            top: 60%; right: 15%;
             font-size: 50px;
             font-family: 'Times New Roman', Times, serif;
             color:blanchedalmond;
-            background-color: crimson;
+            background-color: #9B1D4F;
         }
         .Publications{
             width:30%; 
-            height: 20%;
+            height: 15%;
             position: absolute; 
-            top: 68%; left: 15%;
+            top: 80%; left: 15%;
             font-size: 50px;
             font-family: 'Times New Roman', Times, serif;
             color:blanchedalmond;
-            background-color: crimson;
+            background-color: #9B1D4F;
         }
         .Branches{
             width:30%; 
-            height:20%;
+            height:15%;
             position:absolute; 
-            top: 68%; right: 15%;
+            top: 80%; right: 15%;
             font-size: 50px;
             font-family: 'Times New Roman', Times, serif;
             color:blanchedalmond;
-            background-color: crimson;
+            background-color: #9B1D4F;
         }
     </style>
     
     <body>
-        <div class = "header">
-            <a class="but"><!-- 퍼센트로 바꾸기--> <!--vh: 디바이스의 높이에 따라 사이즈가 바뀜-->
-                <img src= "https://css-tricks.com/wp-content/uploads/2012/10/threelines.png" width="100vh" height = "100vh">
+        <header>
+            <span class ="bg"></span>
+          <a href="#" class="open"><span class="lnr lnr-menu"></span></a>
+          <a href="#" class="logo">Share Gift</a>
+          <nav>
+             <a href="#" class="close"><span class="lnr lnr-cross"></span></a>
+              <ul class="gnb">
+                  <li><a href="#">Share Gift</a></li>
+                  <li><a href="#">My Page</a></li>
+                  <li><a href="#">Team</a></li>
+                  <li><a href="#">History</a></li>
+                  <li><a href="#">Publication</a></li>
+                  <li><a href="#">Branches</a></li>
+                  <li><a href="/volunteering">Volunteering</a></li>
+                  <li><a href="#">Journal</a></li>
+                  <li><a href="#">Covid-19 response</a></li>
+                  <hr/>
+                  <li><a href="#">회원가입</a></li>
+                  <li><a href="#"><img src="{% static 'img/free-icon-gear-5482087.png' %}" height="20vh"/> &nbsp &nbsp설정</a></li>
+              </ul>
+          </nav>
+            <!-- <a class="but">--><!-- 퍼센트로 바꾸기--> <!--vh: 디바이스의 높이에 따라 사이즈가 바뀜-->
+                <!-- <img src= "https://css-tricks.com/wp-content/uploads/2012/10/threelines.png" width="100vh" height = "100vh">
             </a>
             <a href="/">
                 <img src= "{% static 'img/sharegiftlogo.jpg'%}" width="350vh" height="150vh">
@@ -72,56 +92,59 @@
                 <img src="{% static 'img/person.png'%}" width="100vh" height="100vh">
             </a>
             <br>
-            <br>
-        </div>
-    <ul class="slide">
-        <li>
-            <div class="img">
-                <span class="imgBox"><img src="{% static 'img/sharegiftphoto1.jpg' %}" alt=""></span><!--overflow:hidden으로 감싸기위해 imgBox로 묶음-->
-                <!-- <span class="mask a"></span><span class="mask b"></span>
-                <span class="mask c"></span><span class="mask d"></span> -->
-            </div>
-            <div class="title">
-                <h2>For Your Business & <br class="mo">Life</h2>
-                <p>돕다는 글로벌 컨시어지 서비스 그룹입니다.<br>
-                 귀사와 귀하의 품격에 맞는 서비스를 제공합니다.</p>
-            </div>
-        </li>
-        <li>
-            <div class="img">
-                <span class="imgBox"><img src="{% static 'img/sharegiftphoto4.jpg' %}" alt=""></span><!--overflow:hidden으로 감싸기위해 imgBox로 묶음-->
-                <!-- <span class="mask a"></span><span class="mask b"></span>
-                <span class="mask c"></span><span class="mask d"></span> -->
-            </div>
-            <div class="title" style="color: #39312b;">
-                <h2>For Your Business & <br class="mo">Life</h2>
-                <p>돕다는 글로벌 컨시어지 서비스 그룹입니다.<br>
-                 귀사와 귀하의 품격에 맞는 서비스를 제공합니다.</p>
-            </div>
-        </li>
-        <li>
-            <div class="img">
-                <span class="imgBox"><img src="{% static 'img/sharegiftphoto3.jpg' %}" alt=""></span><!--overflow:hidden으로 감싸기위해 imgBox로 묶음-->
-                <!-- <span class="mask a"></span><span class="mask b"></span>
-                <span class="mask c"></span><span class="mask d"></span> -->
-            </div>
-            <div class="title">
-                <h2>For Your Business &<br class="mo"> Life</h2>
-                <p>돕다는 글로벌 컨시어지 서비스 그룹입니다.<br>
-                 귀사와 귀하의 품격에 맞는 서비스를 제공합니다.</p>
-            </div>
-        </li>
-        <li>
-          <div class="img">
-              <span class="imgBox"><img src="{% static 'img/sharegiftphoto2.jpg' %}" alt=""></span>
-          </div>
-          <div class="title">
-              <h2>For Your Business &<br class="mo"> Life</h2>
-              <p>돕다는 글로벌 컨시어지 서비스 그룹입니다.<br>
-               귀사와 귀하의 품격에 맞는 서비스를 제공합니다.</p>
-          </div>
-         </li>
-    </ul>
+            <br>  -->
+        </header>
+        <section class="visual">
+            <ul class="slide">
+                <li>
+                    <div class="img">
+                        <span class="imgBox"><img src="{% static 'img/sharegiftphoto1.jpg' %}" alt=""></span><!--overflow:hidden으로 감싸기위해 imgBox로 묶음-->
+                        <!-- <span class="mask a"></span><span class="mask b"></span>
+                        <span class="mask c"></span><span class="mask d"></span> -->
+                    </div>
+                    <div class="title">
+                        <h2>For Your Business & <br class="mo">Life</h2>
+                        <p>돕다는 글로벌 컨시어지 서비스 그룹입니다.<br>
+                        귀사와 귀하의 품격에 맞는 서비스를 제공합니다.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="img">
+                        <span class="imgBox"><img src="{% static 'img/sharegiftphoto4.jpg' %}" alt=""></span><!--overflow:hidden으로 감싸기위해 imgBox로 묶음-->
+                        <!-- <span class="mask a"></span><span class="mask b"></span>
+                        <span class="mask c"></span><span class="mask d"></span> -->
+                    </div>
+                    <div class="title" style="color: #39312b;">
+                        <h2>For Your Business & <br class="mo">Life</h2>
+                        <p>돕다는 글로벌 컨시어지 서비스 그룹입니다.<br>
+                        귀사와 귀하의 품격에 맞는 서비스를 제공합니다.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="img">
+                        <span class="imgBox"><img src="{% static 'img/sharegiftphoto3.jpg' %}" alt=""></span><!--overflow:hidden으로 감싸기위해 imgBox로 묶음-->
+                        <!-- <span class="mask a"></span><span class="mask b"></span>
+                        <span class="mask c"></span><span class="mask d"></span> -->
+                    </div>
+                    <div class="title">
+                        <h2>For Your Business &<br class="mo"> Life</h2>
+                        <p>돕다는 글로벌 컨시어지 서비스 그룹입니다.<br>
+                        귀사와 귀하의 품격에 맞는 서비스를 제공합니다.</p>
+                    </div>
+                </li>
+                <li>
+                <div class="img">
+                    <span class="imgBox"><img src="{% static 'img/sharegiftphoto2.jpg' %}" alt=""></span>
+                </div>
+                <div class="title">
+                    <h2>For Your Business &<br class="mo"> Life</h2>
+                    <p>돕다는 글로벌 컨시어지 서비스 그룹입니다.<br>
+                    귀사와 귀하의 품격에 맞는 서비스를 제공합니다.</p>
+                </div>
+                </li>
+            </ul>
+        </section>
+        <section>
             <button class="Aboutus" onclick="location.href='/aboutus'">
                     About us
             </button>
@@ -134,7 +157,7 @@
             <button class="Branches" onclick= "location.href='/branches'">
                 Branches
             </button>
-
+        </section>
         <!-- <button class="Aboutus"  onclick = ""> -->
             <!-- <a class="Aboutus" href="/aboutus">About us</a> -->
         <!-- </button> -->
