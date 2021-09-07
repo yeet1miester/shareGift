@@ -2,7 +2,8 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>sharegiftmain/about us</title>
+        <title>sharegiftmain/teammembers</title>
+        {%load static%}
     </head>
     <style>
         .header{text-align:center; position:relative;  margin-bottom: 10px; border-bottom: solid salmon;}
@@ -14,15 +15,15 @@
     </style>
     <body>
         <div class = "header">
-            <button class="but"><!-- 퍼센트로 바꾸기--> <!--vh: 디바이스의 높이에 따라 사이즈가 바뀜-->
+            <a class="but"><!-- 퍼센트로 바꾸기--> <!--vh: 디바이스의 높이에 따라 사이즈가 바뀜-->
                 <img src= "https://css-tricks.com/wp-content/uploads/2012/10/threelines.png" width="100vh" height = "100vh">
-            </button>
-            <button onclick="location.href='base.html'">
-                <img src= "C:\Users\Andyc\OneDrive\Documents\Webapp\firstProject\shareGift\static\img\sharegiftlogo.jpg" width="350vh" height="150vh">
-            </button>
-            <button class = "but1">
-                <img src="C:\Users\Andyc\OneDrive\Documents\Webapp\firstProject\shareGift\static\img\person.png" width="100vh" height="100vh">
-            </button>
+            </a>
+            <a href="/">
+                <img src= "{% static 'img/sharegiftlogo.jpg'%}" width="350vh" height="150vh">
+            </a>
+            <a class = "but1">
+                <img src="{% static 'img/person.png'%}" width="100vh" height="100vh">
+            </a>
             <br>
             <br>
         </div>
@@ -30,7 +31,7 @@
             <table>
                 <tr>
                 <td>
-                    <img src= "C:/Users/Andyc/Downloads/picture.jpg" width="400vh" height="400vh" class = "pictures">
+                    <img src= "" width="400vh" height="400vh" class = "pictures">
                 </td>
                 <td>
                     <div class= "name">
@@ -53,14 +54,14 @@
                 </td>
                 <td>
                     <div class= "name">
-                       name
+                       SungAh Choi
                     </div> 
                     <div>
                         <div class="name">
-                            position
+                            Founding member
                         </div>
                         <div class= "name">
-                            School
+                            University of Pennsylvania 
                         </div>
                         <br>
                     </div>
@@ -87,5 +88,27 @@
             </tr>
             
              </table>
+        </div>
+        <table>
+            <tr>
+                <td>
+                    <img src= "C:/Users/Andyc/Downloads/picture.jpg" width="400vh" height="400vh" class = "pictures">
+                </td>
+                <td>
+                    <div class= "name">
+                        MyungSuh Choi
+                    </div> 
+                    <div>
+                        <div class="name">
+                            Founding member 1
+                        </div>
+                        <div class= "name">
+                            Monta Vista High School
+                        </div>
+                        <br>
+                    </div>
+                </td>
+            </tr>
+        </table>
     </body>
 </html>

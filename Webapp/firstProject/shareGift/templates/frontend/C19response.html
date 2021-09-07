@@ -2,7 +2,8 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>mealtrain</title>
+        <title>C19response</title>
+        {%load static%}
     </head>
     <style>
         .header{text-align:center; position:relative;  margin-bottom: 10px; border-bottom: solid salmon; }
@@ -10,12 +11,12 @@
         .but1{position: relative; left:20%; top: 1%;}
         .writing{font-size: 80%;margin-left: 10%; margin-right: 5%;}
          .images{position: relative; left:3vh}
-        .vline{position: fixed; top: 10%;left:50%;bottom:0;margin:0;border:none; border-right: solid 10px blue;z-index:10; size: 80%; overflow: hidden;}
-        .b1{position: fixed; top:15%; left:15%; width: 60%; height: 10%; background-color: #6e73cbff; font-size: 300%; color: white}
-        .b2{position: fixed; top:30%; right:15%; width: 60%; height: 10%;  font-size: 300%}
-        .b3{position:fixed; top: 45%; left:15%; width: 60%; height: 10%; background-color: #6e73cbff;font-size: 300%; color: white}
-        .b4{position:fixed; top: 60%; right:15%; width: 60%; height: 10%;font-size: 300%}
-        .b5{position:fixed; top: 75%; left:15%; width: 60%; height: 10%; background-color: #6e73cbff;font-size: 300%; color: white}
+        .vline{position: absolute; top: 10%;left:50%;bottom:0;margin:0;border:none; border-right: solid 10px blue;z-index:-1; size: 80%; overflow: hidden;}
+        .b1{z-index: 5;position: fixed; top:15%; left:15%; width: 60%; height: 10%; background-color: #6e73cbff; font-size: 300%; color: white}
+        .b2{z-index: 5;position: fixed; top:30%; right:15%; width: 60%; height: 10%;  font-size: 300%}
+        .b3{z-index: 5;position:fixed; top: 45%; left:15%; width: 60%; height: 10%; background-color: #6e73cbff;font-size: 300%; color: white}
+        .b4{z-index: 5;position:fixed; top: 60%; right:15%; width: 60%; height: 10%;font-size: 300%}
+        .b5{z-index: 5;position:fixed; top: 75%; left:15%; width: 60%; height: 10%; background-color: #6e73cbff;font-size: 300%; color: white}
    </style>
     <body>
         <div class = "header">
@@ -31,7 +32,7 @@
             <br>
             <br>
         </div>
-        <hr class="vline">
+        <hr class="vline" >
         <button class= "b1" onclick= "location.href='/mealtrain'">
             Mealtrain
         </button>

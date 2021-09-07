@@ -30,5 +30,8 @@ urlpatterns = [
     path('publications/', views.publica, name="publica"),
     path('seoul/', views.seoul, name="seoul"),
     path('singapore/', views.sing, name="sing"),
-    path('volunteering/', views.sing, name="volunteering"),
+    path('dental/', views.dental, name ="dental"),
+    path('deafandblind/',views.deaf,name="deafandblind"),
+    path('individual/', views.indiv,name="individual"),
+    path('ptimes/', views.ptimes, name ="ptimes"),
 ]
