@@ -42,19 +42,19 @@ def vol(request):
 def volunteering(request):
     return render(request,'frontend/volunteering.html')
 def join(request):
-    print("join 실행")
+    # print("join 실행")
     if request.method== 'POST': #form이 post로 던지면 여기서 처리
-        print("여기는 포스트 요청")
+        # print("여기는 포스트 요청")
         email = request.POST['email']
         name = request.POST['name']
-        print(email)
-        print(name)
+        # print(email)
+        # print(name)
         User.objects.create_user(username=name, email=email)
         return redirect("/")
         # else :
         #     return render(request, 'app/user.html', {'nameCompare1':"이미 존재하는 닉네임입니다"})
     else:
-        print("join 페이지")
+        # print("join 페이지")
         return render(request, 'frontend/user.html')
 def login(request):
     if request.method== 'POST': #form이 post로 던지면 여기서 처리
@@ -77,7 +77,6 @@ def calendar(request):
 
     if request.method== 'POST':
         id = request.POST['id']
-        count = request.POST['count']
         rsvpDetail = get_object_or_404(RSVP, pk=id) #데이터 받아오기
         rsvpDetail.count -= 1
         rsvpDetail.save()

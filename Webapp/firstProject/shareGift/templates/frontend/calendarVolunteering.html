@@ -23,7 +23,7 @@
        <!--header-->
         <header>
             <span class ="bg"></span>
-            <a href="/login" class="logo1">Login</a>
+            <!-- <a href="/login" class="logo1">Login</a> -->
             <a href="#" class="open"><span class="lnr lnr-menu"></span></a>
             <a href="/" class="logo">Share Gift</a>
             <nav>
@@ -75,7 +75,7 @@
                   </tr>
                 </thead>
                 <tbody>
-                {% for data in rsvp %}
+                {% for data in rsvp %} <!--파이썬에서 데이터 받아왔다면 이렇게 써야됩니다-->
                     <tr>
                         <form method="POST" action="{% url 'calendar' %}">
                             <th scope="row">{{data.dates}}</th>
@@ -85,10 +85,14 @@
                             <input type="hidden" name='count' value="{{data.count}}">
                             {% csrf_token %} <!-- 보안 처리 -->
                             <td>
-                                {% if data.count <= 0 %}
-                                    complete!
+                                {% if user.is_authenticated %}
+                                    {% if data.count <= 0 %}
+                                        complete!
+                                    {% else %}
+                                        <button type="submit" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScUguyB-HnkWxi8MA8Rwz761kVncDfh-kYecI9mnbAel7dGSA/viewform')">RSVP</button>
+                                    {% endif %}
                                 {% else %}
-                                    <button type="submit" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScUguyB-HnkWxi8MA8Rwz761kVncDfh-kYecI9mnbAel7dGSA/viewform')">RSVP</button>
+                                    Login Please!
                                 {% endif %}
                             </td>
                         </form>
