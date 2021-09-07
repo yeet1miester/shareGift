@@ -59,12 +59,13 @@
             background-color: #9B1D4F;
         }
     </style>
-    
     <body>
         <header>
             <span class ="bg"></span>
+            <!-- <img src="https://image.flaticon.com/icons/png/512/1828/1828453.png"/> -->
+            <a href="/login" class="logo1">Login</a>
           <a href="#" class="open"><span class="lnr lnr-menu"></span></a>
-          <a href="#" class="logo">Share Gift</a>
+          <a href="/" class="logo">Share Gift</a>
           <nav>
              <a href="#" class="close"><span class="lnr lnr-cross"></span></a>
               <ul class="gnb">
@@ -78,29 +79,23 @@
                   <li><a href="#">Journal</a></li>
                   <li><a href="#">Covid-19 response</a></li>
                   <hr/>
-                  <li><a href="#">회원가입</a></li>
+                  <li>
+                    {% if user.is_authenticated %}
+                        <a href="/logout">Logout</a>
+                    {% else %}
+                        <a href="/login">Login</a>
+                        <a href="/join">Sign Up</a>
+                    {% endif %}
+                    </li>
                   <li><a href="#"><img src="{% static 'img/free-icon-gear-5482087.png' %}" height="20vh"/> &nbsp &nbsp설정</a></li>
               </ul>
           </nav>
-            <!-- <a class="but">--><!-- 퍼센트로 바꾸기--> <!--vh: 디바이스의 높이에 따라 사이즈가 바뀜-->
-                <!-- <img src= "https://css-tricks.com/wp-content/uploads/2012/10/threelines.png" width="100vh" height = "100vh">
-            </a>
-            <a href="/">
-                <img src= "{% static 'img/sharegiftlogo.jpg'%}" width="350vh" height="150vh">
-            </a>
-            <a class = "but1">
-                <img src="{% static 'img/person.png'%}" width="100vh" height="100vh">
-            </a>
-            <br>
-            <br>  -->
         </header>
         <section class="visual">
             <ul class="slide">
                 <li>
                     <div class="img">
-                        <span class="imgBox"><img src="{% static 'img/sharegiftphoto1.jpg' %}" alt=""></span><!--overflow:hidden으로 감싸기위해 imgBox로 묶음-->
-                        <!-- <span class="mask a"></span><span class="mask b"></span>
-                        <span class="mask c"></span><span class="mask d"></span> -->
+                        <span class="imgBox"><img src="{% static 'img/sharegiftphoto1.jpg' %}" alt=""></span>
                     </div>
                     <div class="title">
                         <h2>For Your Business & <br class="mo">Life</h2>
@@ -110,9 +105,7 @@
                 </li>
                 <li>
                     <div class="img">
-                        <span class="imgBox"><img src="{% static 'img/sharegiftphoto4.jpg' %}" alt=""></span><!--overflow:hidden으로 감싸기위해 imgBox로 묶음-->
-                        <!-- <span class="mask a"></span><span class="mask b"></span>
-                        <span class="mask c"></span><span class="mask d"></span> -->
+                        <span class="imgBox"><img src="{% static 'img/sharegiftphoto4.jpg' %}" alt=""></span>
                     </div>
                     <div class="title" style="color: #39312b;">
                         <h2>For Your Business & <br class="mo">Life</h2>
@@ -122,9 +115,8 @@
                 </li>
                 <li>
                     <div class="img">
-                        <span class="imgBox"><img src="{% static 'img/sharegiftphoto3.jpg' %}" alt=""></span><!--overflow:hidden으로 감싸기위해 imgBox로 묶음-->
-                        <!-- <span class="mask a"></span><span class="mask b"></span>
-                        <span class="mask c"></span><span class="mask d"></span> -->
+                        <span class="imgBox"><img src="{% static 'img/sharegiftphoto3.jpg' %}" alt=""></span>
+ 
                     </div>
                     <div class="title">
                         <h2>For Your Business &<br class="mo"> Life</h2>
@@ -148,7 +140,7 @@
             <button class="Aboutus" onclick="location.href='/aboutus'">
                     About us
             </button>
-            <button class="Volunteering" onclick = "location.href='/response'">
+            <button class="Volunteering" onclick = "location.href='/volunteering'">
                 Volunteering
             </button>
             <button class="Publications" onclick="location.href='/publications'">

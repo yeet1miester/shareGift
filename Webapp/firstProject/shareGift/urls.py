@@ -34,4 +34,9 @@ urlpatterns = [
     path('deafandblind/',views.deaf,name="deafandblind"),
     path('individual/', views.indiv,name="individual"),
     path('ptimes/', views.ptimes, name ="ptimes"),
+    path('volunteering/', views.volunteering, name ="volunteering"),
+    path('join/', views.join, name ="join"),
+    path('login/', views.login, name ="login"),
+    path('logout/', views.logout, name='logout'),
+    path('calendar/', views.calendar, name='calendar'),
 ]
