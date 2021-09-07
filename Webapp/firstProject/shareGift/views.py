@@ -25,4 +25,14 @@ def sing(request):
     return render(request, 'frontend/singapore.html')
 def branch(request):
     return render(request, 'frontend/branches.html')
+def dental(request):
+    return render(request, 'frontend/dental.html')
+def deaf(request):
+    return render(request, 'frontend/deafandblind.html')
+def indiv(request):
+    return render(request, 'frontend/individal.html')
+def ptimes(request):
+    return render(request, 'frontend/ptimes.html')
+def vol(request):
+    return render(request,'frontend/C19response.html')
 # Create your views here.
