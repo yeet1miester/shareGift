@@ -61,14 +61,13 @@ def login(request):
     if request.method== 'POST': #form이 post로 던지면 여기서 처리
         email = request.POST['email']
         name = request.POST['name']
-        nameList = User.objects.filter()
-        for nameCheck in nameList:
-            if nameCheck.email == email and nameCheck.username == name:
-                print(nameCheck)
-                email = nameCheck.email
-                name = nameCheck.username
-                user = auth.authenticate(request, username=name, password=name)
-                print(user)
+        # nameList = User.objects.filter()
+        user = auth.authenticate(request, username=name, password=name)
+        # for nameCheck in nameList:
+        #     if nameCheck.email == email and nameCheck.username == name:
+        #         print(nameCheck)
+        #         email = nameCheck.email
+        #         name = nameCheck.username
         if user is None:
             message = "아이디 또는 비밀번호가 틀렸습니다."
             return render(request, 'frontend/login.html',{"message":message})
