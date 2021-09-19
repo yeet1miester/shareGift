@@ -32,7 +32,7 @@
 </head>
 <body>
     <div class="wrap">
-       <!--header-->
+        <!--header-->
         <header>
             <span class ="bg"></span>
             <a href="#" class="open"><span class="lnr lnr-menu"></span></a>
@@ -40,15 +40,15 @@
             <nav>
                 <a href="#" class="close"><span class="lnr lnr-cross"></span></a>
                 <ul class="gnb">
-                    <li><a href="#">Share Gift</a></li>
-                    <li><a href="#">My Page</a></li>
+                    <li><a href="/">Share Gift</a></li>
+                    <!-- <li><a href="#">My Page</a></li> -->
                     <li><a href="#">Team</a></li>
                     <li><a href="#">History</a></li>
-                    <li><a href="#">Publication</a></li>
-                    <li><a href="#">Branches</a></li>
+                    <li><a href="/publications">Publication</a></li>
+                    <li><a href="/branches">Branches</a></li>
                     <li><a href="/volunteering">Volunteering</a></li>
-                    <li><a href="#">Journal</a></li>
-                    <li><a href="#">Covid-19 response</a></li>
+                    <!-- <li><a href="#">Journal</a></li> -->
+                    <li><a href="/response">Covid-19 response</a></li>
                     <hr/>
                     <li>
                         {% if user.is_authenticated %}
@@ -66,7 +66,7 @@
             <div class="container">
                 <div class="input-form-backgroud row">
                     <div class="input-form col-md-12 mx-auto">
-                        <h4 class="mb-3">회원가입</h4>
+                        <h4 class="mb-3">Sign Up</h4>
                         <form class="validation-form" method="POST"  action="{% url 'join' %}" novalidate>
                             {% csrf_token %} <!-- 보안 처리 -->
                             <div class="row">

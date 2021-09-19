@@ -22,21 +22,20 @@
        <!--header-->
         <header>
             <span class ="bg"></span>
-            <!-- <a href="/login" class="logo1">Login</a> -->
             <a href="#" class="open"><span class="lnr lnr-menu"></span></a>
-            <a href="/" class="logo">Share Gift</a>
+            <a href="#" class="logo">Share Gift</a>
             <nav>
                 <a href="#" class="close"><span class="lnr lnr-cross"></span></a>
                 <ul class="gnb">
-                    <li><a href="#">Share Gift</a></li>
-                    <li><a href="#">My Page</a></li>
+                    <li><a href="/">Share Gift</a></li>
+                    <!-- <li><a href="#">My Page</a></li> -->
                     <li><a href="#">Team</a></li>
                     <li><a href="#">History</a></li>
-                    <li><a href="#">Publication</a></li>
-                    <li><a href="#">Branches</a></li>
+                    <li><a href="/publications">Publication</a></li>
+                    <li><a href="/branches">Branches</a></li>
                     <li><a href="/volunteering">Volunteering</a></li>
-                    <li><a href="#">Journal</a></li>
-                    <li><a href="#">Covid-19 response</a></li>
+                    <!-- <li><a href="#">Journal</a></li> -->
+                    <li><a href="/response">Covid-19 response</a></li>
                     <hr/>
                     <li>
                         {% if user.is_authenticated %}
@@ -45,7 +44,7 @@
                             <a href="/login">Login</a>
                             <a href="/join">Sign Up</a>
                         {% endif %}
-                        </li>
+                    </li>
                     <li><a href="#"><img src="{% static 'img/free-icon-gear-5482087.png' %}" height="20vh"/> &nbsp &nbsp설정</a></li>
                 </ul>
             </nav>
