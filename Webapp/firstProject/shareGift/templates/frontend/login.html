@@ -52,12 +52,12 @@
                     <hr/>
                     <li>
                         {% if user.is_authenticated %}
-                            <a href="/join">Logout</a>
+                            <a href="/logout">Logout</a>
                         {% else %}
                             <a href="/login">Login</a>
                             <a href="/join">Sign Up</a>
                         {% endif %}
-                        </li>
+                    </li>
                     <li><a href="#"><img src="{% static 'img/free-icon-gear-5482087.png' %}" height="20vh"/> &nbsp &nbsp설정</a></li>
                 </ul>
             </nav>
@@ -70,6 +70,7 @@
                         <form class="validation-form" method="POST"  action="{% url 'login' %}" novalidate>
                             {% csrf_token %} <!-- 보안 처리 -->
                             <div class="row">
+                                <p style="color:red">{{message}}</p>
                                 <div class="col-md-6 mb-3">
                                     <label for="name">NAME</label>
                                     <input name="name" type="text" class="form-control" id="name" placeholder="" value="" required>

@@ -47,25 +47,35 @@ def join(request):
         # print("여기는 포스트 요청")
         email = request.POST['email']
         name = request.POST['name']
+        password = request.POST['name']
         # print(email)
         # print(name)
-        User.objects.create_user(username=name, email=email)
+        User.objects.create_user(username=name, email=email, password=password)
         return redirect("/")
         # else :
         #     return render(request, 'app/user.html', {'nameCompare1':"이미 존재하는 닉네임입니다"})
     else:
-        # print("join 페이지")
+        # print("user Join 페이지")
         return render(request, 'frontend/user.html')
 def login(request):
     if request.method== 'POST': #form이 post로 던지면 여기서 처리
         email = request.POST['email']
         name = request.POST['name']
-        user = auth.authenticate(request, username=name, email=email)
+        nameList = User.objects.filter()
+        for nameCheck in nameList:
+            if nameCheck.email == email and nameCheck.username == name:
+                print(nameCheck)
+                email = nameCheck.email
+                name = nameCheck.username
+                user = auth.authenticate(request, username=name, password=name)
+                print(user)
         if user is None:
-            redirect('/join')
+            message = "아이디 또는 비밀번호가 틀렸습니다."
+            return render(request, 'frontend/login.html',{"message":message})
         else:
+            print("로그인완료")
             auth.login(request, user)
-        return redirect("/")
+            return redirect("/")
     else:
         return render(request, 'frontend/login.html')
 def logout(request):
