@@ -4,30 +4,64 @@
         <meta charset="UTF-8">
         <title>handless-handle-donation</title>
         {%load static%}
-    </head>
-    <style>
-        .header{text-align:center; position:relative;  margin-bottom: 10px; border-bottom: solid salmon; }
-        .but{position: relative; right:18%; top: 1%;}
-        .but1{position: relative; left:20%; top: 1%;}
-        .subheader{ font-size: 200%;color:black; background-color: #e7e6e6ff;}
-        .writing{font-size: 80%;margin-left: 10%; margin-right: 5%;}
-         .images{position: relative; left:3vh}
-         .next{position:relative; top:10%; left:60%; width: 20vh; height:10vh; font-size: 200%;}
-   </style>
-    <body>
-        <div class = "header">
-            <a class="but"><!-- 퍼센트로 바꾸기--> <!--vh: 디바이스의 높이에 따라 사이즈가 바뀜-->
-                <img src= "https://css-tricks.com/wp-content/uploads/2012/10/threelines.png" width="100vh" height = "100vh">
-            </a>
-            <a href="/">
-                <img src= "{% static 'img/sharegiftlogo.jpg'%}" width="350vh" height="150vh">
-            </a>
-            <a class = "but1">
-                <img src="{% static 'img/person.png'%}" width="100vh" height="100vh">
-            </a>
-            <br>
-            <br>
-        </div>  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0, maximum-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <!--font-->
+<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+<link rel="stylesheet" href="{% static 'css/slick.css' %}">
+<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+
+<!--script-->
+<script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+<script src="{% static 'js/scrolla.jquery.min.js' %}"></script>
+<script src="{% static 'js/slick.min.js' %}"></script>
+<script src="{% static 'js/script.js' %}"></script>
+
+</head>
+<style> 
+    .input-form { max-width: 680px; margin-top: 10%;
+        padding: 32px; background: #fff;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        -webkit-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+        -moz-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+        box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15) }
+</style>
+<body>
+    <div class="wrap">
+        <!--header-->
+        <div class="wrap">
+            <!--header-->
+            <header>
+                <span class ="bg"></span>
+                <a href="#" class="open"><span class="lnr lnr-menu"></span></a>
+                <a href="#" class="logo">Share Gift</a>
+                <nav>
+                    <a href="#" class="close"><span class="lnr lnr-cross"></span></a>
+                    <ul class="gnb">
+                        <li><a href="/">Share Gift</a></li>
+                        <!-- <li><a href="#">My Page</a></li> -->
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">History</a></li>
+                        <li><a href="/publications">Publication</a></li>
+                        <li><a href="/branches">Branches</a></li>
+                        <li><a href="/volunteering">Volunteering</a></li>
+                        <!-- <li><a href="#">Journal</a></li> -->
+                        <li><a href="/response">Covid-19 response</a></li>
+                        <hr/>
+                        <li>
+                            {% if user.is_authenticated %}
+                                <a href="/logout">Logout</a>
+                            {% else %}
+                                <a href="/login">Login</a>
+                                <a href="/join">Sign Up</a>
+                            {% endif %}
+                        </li>
+                        <li><a href="#"><img src="{% static 'img/free-icon-gear-5482087.png' %}" height="20vh"/> &nbsp &nbsp설정</a></li>
+                    </ul>
+                </nav>
+            </header>
         <div class= "subheader">
         <br>
         <br>
@@ -46,6 +80,16 @@
         <button class="next" onclick = "location.href='/peertutoring'">
             Next
         </button>  
+        </div>
     </div>    
     </body>
+<style>
+    .header{text-align:center; position:relative;  margin-bottom: 10px; border-bottom: solid salmon; }
+    .but{position: relative; right:18%; top: 1%;}
+    .but1{position: relative; left:20%; top: 1%;}
+    .subheader{ font-size: 200%;color:black; background-color: #e7e6e6ff;}
+    .writing{font-size: 80%;margin-left: 10%; margin-right: 5%;}
+     .images{position: relative; left:3vh}
+     .next{position:relative; top:10%; left:60%; width: 20vh; height:10vh; font-size: 200%;}
+</style>
 </html>

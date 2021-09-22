@@ -4,7 +4,73 @@
         <meta charset="UTF-8">
         <title>pandemic-times</title>
         {% load static%}
+        <link rel="stylesheet" href="{% static 'css/main.css' %}">
+        <!--font-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+    <link rel="stylesheet" href="{% static 'css/slick.css' %}">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+
+    <!--script-->
+    <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'js/scrolla.jquery.min.js' %}"></script>
+    <script src="{% static 'js/slick.min.js' %}"></script>
+    <script src="{% static 'js/script.js' %}"></script>
     </head>
+    <body>
+        <div class="wrap">
+            <!--header-->
+            <header>
+                <span class ="bg"></span>
+                <a href="#" class="open"><span class="lnr lnr-menu"></span></a>
+                <a href="#" class="logo">Share Gift</a>
+                <nav>
+                    <a href="#" class="close"><span class="lnr lnr-cross"></span></a>
+                    <ul class="gnb">
+                        <li><a href="/">Share Gift</a></li>
+                        <!-- <li><a href="#">My Page</a></li> -->
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">History</a></li>
+                        <li><a href="/publications">Publication</a></li>
+                        <li><a href="/branches">Branches</a></li>
+                        <li><a href="/volunteering">Volunteering</a></li>
+                        <!-- <li><a href="#">Journal</a></li> -->
+                        <li><a href="/response">Covid-19 response</a></li>
+                        <hr/>
+                        <li>
+                            {% if user.is_authenticated %}
+                                <a href="/logout">Logout</a>
+                            {% else %}
+                                <a href="/login">Login</a>
+                                <a href="/join">Sign Up</a>
+                            {% endif %}
+                        </li>
+                        <li><a href="#"><img src="{% static 'img/free-icon-gear-5482087.png' %}" height="20vh"/> &nbsp &nbsp설정</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class= "subheader">
+                <br>
+                <br>
+                <div>
+                THE PANDEMIC TIMES
+                </div>
+                <br>
+                <br>
+            </div>
+            <br>
+            <div class= "writing">
+                ​The Pandemic Times is a Student daily publication which serves as both a platform for community discussion and a place for those interested in journalism to develop their skills. The Pandemic Times report news, publish opinions of students and runs advertisements catered to the community. In the Pandemic Times, volunteer writers research and write about what is going on in the pandemic era to raise awareness the seriousness of epidemic disease. Visit here to read the newspaper.
+            </div>
+            <br>
+            <button class = "moreabout" onclick = "location.href='https:pandemic-times.news'">
+                MORE ABOUT PANDEMIC TIMES
+            </button>
+            <br>
+            <button class="next" onclick = "location.href='/christmas'">
+                Next
+            </button>  
+        </div>    
+    </body>
     <style>
         .header{text-align:center; position:relative;  margin-bottom: 10px; border-bottom: solid salmon; }
         .but{position: relative; right:18%; top: 1%;}
@@ -16,41 +82,4 @@
          .moreabout{position: relative; top:10%; left:25%; width: 50%; height: 5%; font-size: 150%; background-color: #ffd966ff;}
 
    </style>
-    <body>
-        <div class = "header">
-            <a class="but"><!-- 퍼센트로 바꾸기--> <!--vh: 디바이스의 높이에 따라 사이즈가 바뀜-->
-                <img src= "https://css-tricks.com/wp-content/uploads/2012/10/threelines.png" width="100vh" height = "100vh">
-            </a>
-            <a href="/">
-                <img src= "{% static 'img/sharegiftlogo.jpg'%}" width="350vh" height="150vh">
-            </a>
-            <a class = "but1">
-                <img src="{% static 'img/person.png'%}" width="100vh" height="100vh">
-            </a>
-            <br>
-            <br>
-        </div>
-        <div class= "subheader">
-        <br>
-        <br>
-        <div>
-            THE PANDEMIC TIMES
-        </div>
-        <br>
-        <br>
-        </div>
-        <br>
-        <div class= "writing">
-            ​The Pandemic Times is a Student daily publication which serves as both a platform for community discussion and a place for those interested in journalism to develop their skills. The Pandemic Times report news, publish opinions of students and runs advertisements catered to the community. In the Pandemic Times, volunteer writers research and write about what is going on in the pandemic era to raise awareness the seriousness of epidemic disease. Visit here to read the newspaper.
-        </div>
-        <br>
-        <button class = "moreabout" onclick = "location.href='https:pandemic-times.news'">
-            MORE ABOUT PANDEMIC TIMES
-        </button>
-        <br>
-        <button class="next" onclick = "location.href='/christmas'">
-            Next
-        </button>  
-    </div>    
-    </body>
 </html>
