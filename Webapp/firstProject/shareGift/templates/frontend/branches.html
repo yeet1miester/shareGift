@@ -1,91 +1,88 @@
 <!DOCTYPE html>
+<html lang="ko">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0, maximum-scale=1.0">
+    <title>Share Gift</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <!--font-->
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+    <link rel="stylesheet" href="{% static 'css/slick.css' %}">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
 
-<html>
-    <head>
-        {% load static %}
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0, maximum-scale=1.0">
-        <title>Share Gift</title>
-        <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <!--script-->
+    <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+    <script src="{% static 'js/scrolla.jquery.min.js' %}"></script>
+    <script src="{% static 'js/slick.min.js' %}"></script>
+    <script src="{% static 'js/script.js' %}"></script>
+</head>
+<body>
+    <div class="wrap">
+       <!--header-->
+        <header>
+            <span class ="bg"></span>
+            <a href="#" class="open"><span class="lnr lnr-menu"></span></a>
+            <a href="#" class="logo">Share Gift</a>
+            <nav>
+                <a href="#" class="close"><span class="lnr lnr-cross"></span></a>
+                <ul class="gnb">
+                    <li><a href="/">Share Gift</a></li>
+                    <!-- <li><a href="#">My Page</a></li> -->
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">History</a></li>
+                    <li><a href="/publications">Publication</a></li>
+                    <li><a href="/branches">Branches</a></li>
+                    <li><a href="/volunteering">Volunteering</a></li>
+                    <!-- <li><a href="#">Journal</a></li> -->
+                    <li><a href="/response">Covid-19 response</a></li>
+                    <hr/>
+                    <li>
+                        {% if user.is_authenticated %}
+                            <a href="/logout">Logout</a>
+                        {% else %}
+                            <a href="/login">Login</a>
+                            <a href="/join">Sign Up</a>
+                        {% endif %}
+                    </li>
+                    <li><a href="#"><img src="{% static 'img/free-icon-gear-5482087.png' %}" height="20vh"/> &nbsp &nbsp설정</a></li>
+                </ul>
+            </nav>
+        </header>
+        <br>
+        <br>
+        <br>
 
-        <!--font-->
-        <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
-        <link rel="stylesheet" href="{% static 'css/slick.css' %}">
-        <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
-
-        <!--script-->
-        <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
-        <script src="{% static 'js/scrolla.jquery.min.js' %}"></script>
-        <script src="{% static 'js/slick.min.js' %}"></script>
-        <script src="{% static 'js/script.js' %}"></script>
-    </head>
-    <body>
-        <div class="wrap">
-            <!--header-->
-            <header>
-                <span class ="bg"></span>
-                <a href="#" class="open"><span class="lnr lnr-menu"></span></a>
-                <a href="#" class="logo">Share Gift</a>
-                <nav>
-                    <a href="#" class="close"><span class="lnr lnr-cross"></span></a>
-                    <ul class="gnb">
-                        <li><a href="/">Share Gift</a></li>
-                        <!-- <li><a href="#">My Page</a></li> -->
-                        <li><a href="#">Team</a></li>
-                        <li><a href="#">History</a></li>
-                        <li><a href="/publications">Publication</a></li>
-                        <li><a href="/branches">Branches</a></li>
-                        <li><a href="/volunteering">Volunteering</a></li>
-                        <!-- <li><a href="#">Journal</a></li> -->
-                        <li><a href="/response">Covid-19 response</a></li>
-                        <hr/>
-                        <li>
-                            {% if user.is_authenticated %}
-                                <a href="/logout">Logout</a>
-                            {% else %}
-                                <a href="/login">Login</a>
-                                <a href="/join">Sign Up</a>
-                            {% endif %}
-                        </li>
-                        <li><a href="#"><img src="{% static 'img/free-icon-gear-5482087.png' %}" height="20vh"/> &nbsp &nbsp설정</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <br>
-            <br>
-            <br>
-
-            <div class="red">
-                <div>
-                    Seoul Branch
-                </div>
-                <br>
-                <div class="sub">
-                    Support Education 
-                    for Laotian Children
-                </div>
-                <button class="b1" onclick= "location.href='/seoul'">
-                    more
-                </button>
+        <section class="visual1">
+            <div class="visual2">
+            <div>
+                Seoul Branch
             </div>
             <br>
-            <br>
-            <div class="white">
+            <div class="sub">
+                Support Education 
+                for Laotian Children
+            </div>
+            <button class="b1" onclick= "location.href='/seoul'">
+                more
+            </button>
+            </div>
+          
+            <div class="visual2">
                 <div>
                     Singapore Branch
                 </div>
                 <br>
-                <div class="sub1">
-                    ​Support Social Justice with Arts
+                <div class="sub">
+                    Support Social Justice with Arts
                 </div>
-                <br>
-                <button class="b2" onclick="location.href='/singapore'">
+                <button class="b1" onclick="location.href='/singapore'">
                     more
                 </button>
             </div>
-            <br>
-            <br>
-            <div class="red">
+           
+            
+            <div class="visual2">
                 <div>
                     Baekhyun Branch
                 </div>
@@ -94,22 +91,35 @@
                     Support Mental Health 
                     in Sri Lanka
                 </div>
-                <br>
-                <button class="b1" onclick="location.href='/baekhyun'">
+                  <button class="b1" onclick="location.href='/baekhyun'">
                     more
                 </button>
             </div>
-        </div><!-- class="wrap"과 매칭되는 div-->
-    </body>
-    <style>
-        .header{text-align:center; position:relative;  margin-bottom: 10px; border-bottom: solid #salmon }
-        .but{position: relative; right:15%; top: 1%;}
-        .but1{position: relative; left:15%; top: 1%;}
-        .red{background: #ad446eff; color: #white; font-size: 300%; padding: 10%;}
-        .white{font-size: 300%; background-color: #mistyrose; padding: 10%;}
-        .sub{color:#white; font-size: 60%;}
-        .sub1{font-size:60%}
-        .b1{font-size: 80%; position:relative; left:50%}
-        .b2{ font-size:80%; position:relative; left:50%}
-    </style>
+        </section>
+    </div>
+</body>
+<style>
+    section.visual3 {margin-top: 60px; padding-bottom: 50px; position: relative; background-color: #AD446E;}
+    section.visual1 {padding-bottom: 50px; position: relative;}
+    
+    .visual2{
+        background: #AD446E;
+        font-weight: bold; 
+        margin:10%;
+        padding: 20% 12%;
+        color: #fff;
+        text-align: center;
+        font-size: 60px;
+    }
+    .sub{font-size:30px;}
+    .b1{
+        padding: 5%;
+        margin: 3% 5%;
+        float: right;
+        border: 1px solid #fff;
+        color:#fff;
+        background: #AD446E;
+        font-size: 20px
+    }
+</style>
 </html>
