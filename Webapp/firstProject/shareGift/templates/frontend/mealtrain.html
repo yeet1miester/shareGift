@@ -2,21 +2,37 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>mealtrain</title>
+        <title>handless-handle-donation</title>
         {%load static%}
-        <link rel="stylesheet" href="{% static 'css/main.css' %}">
-        <!--font-->
-    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
-    <link rel="stylesheet" href="{% static 'css/slick.css' %}">
-    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0, maximum-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <!--font-->
+<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+<link rel="stylesheet" href="{% static 'css/slick.css' %}">
+<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
 
-    <!--script-->
-    <script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
-    <script src="{% static 'js/scrolla.jquery.min.js' %}"></script>
-    <script src="{% static 'js/slick.min.js' %}"></script>
-    <script src="{% static 'js/script.js' %}"></script>
-    </head>
-    <body>
+
+<!--script-->
+<script src="{% static 'js/jquery-3.3.1.min.js' %}"></script>
+<script src="{% static 'js/scrolla.jquery.min.js' %}"></script>
+<script src="{% static 'js/slick.min.js' %}"></script>
+<script src="{% static 'js/script.js' %}"></script>
+
+
+</head>
+<style> 
+    .input-form { max-width: 680px; margin-top: 10%;
+        padding: 32px; background: #fff;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        -webkit-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+        -moz-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+        box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15) }
+</style>
+<body>
+    <div class="wrap">
+        <!--header-->
         <div class="wrap">
             <!--header-->
             <header>
@@ -47,12 +63,13 @@
                         <li><a href="#"><img src="{% static 'img/free-icon-gear-5482087.png' %}" height="20vh"/> &nbsp &nbsp설정</a></li>
                     </ul>
                 </nav>
+
             </header>
         <div class= "subheader">
         <br>
         <br>
         <div>
-            SHARE GIFT MEAL TRAIN
+            MEAL TRAIN
         </div>
         <br>
         <br>
@@ -80,13 +97,13 @@
         </button>  
         </div> 
     </body>
-    <style>
-        .header{text-align:center; position:relative;  margin-bottom: 10px; border-bottom: solid salmon; }
-        .but{position: relative; right:18%; top: 1%;}
-        .but1{position: relative; left:20%; top: 1%;}
-        .subheader{text-align: center; font-size: 250%;color:white; background-color: #6e73cbff;}
-        .writing{margin-left: 10%; margin-right: 5%;}
-         .images{position: relative; left:3vh}
-         .next{position:relative; top:10%; left:60%; width: 20vh; height:10vh; font-size: 200%;}
-   </style>
+ <style>
+    .header{text-align:center; position:relative;  margin-bottom: 10px; border-bottom: solid salmon; }
+    .but{position: relative; right:18%; top: 1%;}
+    .but1{position: relative; left:20%; top: 1%;}
+    .subheader{ font-size: 200%;color:black; background-color: #e7e6e6ff;}
+    .writing{font-size: 120%;margin-left: 10%; margin-right: 5%;}
+     .images{position: relative; left:3vh}
+     .next{position:relative; top:10%; left:60%; width: 20vh; height:10vh; font-size: 200%;}
+</style>
 </html>
