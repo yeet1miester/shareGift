@@ -354,8 +354,8 @@ br.mo {display: none;}
     section.visual .img img {height: 40vh; width:100%;}
     section.visual .img .page img {width: 75%; height: auto;margin-left: 8%;}
     br.mo {display: block;}
-    section.visual .title h2{font-size: 15px;}
-    section.visual .title p{font-size: 10px;}
+    section.visual .title h2{font-size: 30px;}
+    section.visual .title p{font-size: 15px;}
     .slick-dots{right: 20px;}
 
     .Aboutus{
