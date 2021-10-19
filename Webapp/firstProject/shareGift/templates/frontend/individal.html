@@ -28,63 +28,38 @@
             -moz-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
             box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15) }
     </style>
-    <body>
-        <div class="wrap">
-            <!--header-->
-            <header>
-                <span class ="bg"></span>
-                <a href="#" class="open"><span class="lnr lnr-menu"></span></a>
-                <a href="/" class="logo"><img src="{% static 'img/logo.PNG' %}"/></a>
-                <nav>
-                    <a href="#" class="close"><span class="lnr lnr-cross"></span></a>
-                    <ul class="gnb">
-                        <li><a href="/">Share Gift</a></li>
-                        <!-- <li><a href="#">My Page</a></li> -->
-                        <li><a href="#">Team</a></li>
-                        <li><a href="#">History</a></li>
-                        <li><a href="/publications">Publication</a></li>
-                        <li><a href="/branches">Branches</a></li>
-                        <li><a href="/volunteering">Volunteering</a></li>
-                        <!-- <li><a href="#">Journal</a></li> -->
-                        <li><a href="/response">Covid-19 response</a></li>
-                        <hr/>
-                        <li>
-                            {% if user.is_authenticated %}
-                                <a href="/logout">Logout</a>
-                            {% else %}
-                                <a href="/login">Login</a>
-                                <a href="/join">Sign Up</a>
-                            {% endif %}
-                        </li>
-                        <li><a href="#"><img src="{% static 'img/free-icon-gear-5482087.png' %}" height="20vh"/> &nbsp &nbsp설정</a></li>
-                    </ul>
-                </nav>
-            </header>
-    <!-- <div class="forline">
-        <br>
-        <table class="table">
-            <tr class="subheader">
-                <th>
-                    Individual Patient Visit​
-                </th>
-            </tr>
-            <br>
-            <tr>
-            <td class="pl">
-             <img src="https://sharegiftco.files.wordpress.com/2020/09/ba5eec_2bce5a0ce9f54b27b2566721e260bb0emv2-1.jpg" width="600vh" height="400vh">
-            </td>
-            </tr><br>
-            <tr class="des">
-                <td>
-                   Through our Community Development, we have the potential to make a real and positive change in the community. <br>
-                   Get in touch with us today and see how you can lend a helping hand with this program. <br>
-                   Since 2017. 9 AM- 12 PM, EVERY SUNDAY! <br>
-                </td>
-            </tr>
-        </table>
-        <br>
-        <br>
-    </div> -->
+<body>
+    <div class="wrap">
+        <!--header-->
+        <header>
+            <span class ="bg"></span>
+            <a href="#" class="open"><span class="lnr lnr-menu"></span></a>
+            <a href="/" class="logo"><img src="{% static 'img/logo.PNG' %}"/></a>
+            <nav>
+                <a href="#" class="close"><span class="lnr lnr-cross"></span></a>
+                <ul class="gnb">
+                    <li><a href="/">Share Gift</a></li>
+                    <!-- <li><a href="#">My Page</a></li> -->
+                    <li><a href="#">Team</a></li>
+                    <li><a href="#">History</a></li>
+                    <li><a href="/publications">Publication</a></li>
+                    <li><a href="/branches">Branches</a></li>
+                    <li><a href="/volunteering">Volunteering</a></li>
+                    <!-- <li><a href="#">Journal</a></li> -->
+                    <li><a href="/response">Covid-19 response</a></li>
+                    <hr/>
+                    <li>
+                        {% if user.is_authenticated %}
+                            <a href="/logout">Logout</a>
+                        {% else %}
+                            <a href="/login">Login</a>
+                            <a href="/join">Sign Up</a>
+                        {% endif %}
+                    </li>
+                    <li><a href="#"><img src="{% static 'img/free-icon-gear-5482087.png' %}" height="20vh"/> &nbsp &nbsp설정</a></li>
+                </ul>
+            </nav>
+        </header>
         <section class="subheader">
             <h1 class="subheaderTitle">Individual Patient Visit​</h1>
             <img src="https://sharegiftco.files.wordpress.com/2020/09/ba5eec_2bce5a0ce9f54b27b2566721e260bb0emv2-1.jpg">
