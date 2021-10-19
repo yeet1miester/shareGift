@@ -198,7 +198,7 @@ br.mo {display: none;}
 
     /*indivial*/
     section.subheader{margin-top:10%;}
-    section.subheader .subheaderTitle{font-size: 30px; color:#f25f70; text-align: center;}
+    section.subheader .subheaderTitle{font-size: 30px; color:#9B1D4F; text-align: center;}
     section.subheader img {width:100%;}
     section.subheader .des{font-size: 15px; position:relative; margin:5%;} 
 
@@ -249,7 +249,7 @@ br.mo {display: none;}
 @media screen and (max-width:950px){
     /*indivial*/
     section.subheader{margin-top:10%;}
-    section.subheader .subheaderTitle{font-size: 30px; color:#f25f70; text-align: center;}
+    section.subheader .subheaderTitle{font-size: 30px; color:#9B1D4F; text-align: center;}
     section.subheader img {width:100%;}
     section.subheader .des{font-size: 15px; position:relative; margin:5%;}
    /*visual */
@@ -344,7 +344,7 @@ br.mo {display: none;}
 @media screen and (max-width:750px){
     /*indivial*/
     section.subheader{margin-top:20%;}
-    section.subheader .subheaderTitle{font-size: 30px; color:#f25f70; text-align: center;}
+    section.subheader .subheaderTitle{font-size: 30px; color:#9B1D4F; text-align: center;}
     section.subheader img {width:100%;}
     section.subheader .des{font-size: 15px; position:relative; margin:5%;} 
 
