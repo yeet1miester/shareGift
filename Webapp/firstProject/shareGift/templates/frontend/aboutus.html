@@ -68,25 +68,43 @@
                 Share Gift has expanded to five chapters globally with over 500+ members.<br>
            </div>
             <br>
-             <br>
+            <br>
+            <hr/>
             <div class= "subheader">
                 Major activities 
             </div>
-            <a href="/individual" class= "links"><!-- 링크연결-->
-                Individual Patient Visit >>
-            </a>
-            <br>
-            <a href="/ptimes" class= "links"><!-- 링크연결-->
-                The Pandemic Times News >>
-            </a>
-            <br>
-            <a href="/dental" class= "links"><!-- 링크연결-->
-                Dental Service For Homeless >>
-            </a>
-              <br>
-             <a href="/deafandblind" class= "links"><!-- 링크연결-->
-                Deaf and Blind Community >>
-            </a>
+            <div onclick="movePage('individual')">
+                <a href="/individual" class= "links"><!-- 링크연결-->
+                    Individual Patient Visit >>
+                </a>
+                <a href="/individual" class= "links2"><!-- 링크연결-->
+                    +
+                </a>
+            </div>
+            <div onclick="movePage('ptimes')">
+                <a href="/ptimes" class= "links"><!-- 링크연결-->
+                    The Pandemic Times News >>
+                </a>
+                <a href="/ptimes" class= "links2"><!-- 링크연결-->
+                    +
+                </a>
+            </div>
+            <div onclick="movePage('dental')">
+                <a href="/dental" class= "links"><!-- 링크연결-->
+                    Dental Service For Homeless >>
+                </a>
+                <a href="/dental" class= "links2"><!-- 링크연결-->
+                    +
+                </a>
+            </div>
+            <div onclick="movePage('deafandblind')">
+                <a href="/deafandblind" class= "links"><!-- 링크연결-->
+                    Deaf and Blind Community >>
+                </a>
+                <a href="/deafandblind" class= "links2"><!-- 링크연결-->
+                    +
+                </a>
+            <div>
             <br>
         </div>
     </body>
@@ -96,6 +114,21 @@
         .but1{position: relative; left:15%; top: 1%;}
         .subheader{text-align: center; font-size: 150%; font-weight: 900; margin-left: 10%; margin-right: 10%;color:rgb(173, 68, 110)}
         .writing{font-size: 100%;margin-left: 10%; margin-right: 5%;}
-        .links{font-size: 70%; margin-left: 10%}
+        .links{font-size: 70%; margin-left: 10%;}
+        .links2{float:right; margin-right: 10%;}
     </style>
+    <script>
+        function movePage(param){
+            if(param == "individual"){
+                location.href="/individual";
+            }else if(param == "ptimes"){
+                location.href="/ptimes";
+            }else if(param == "dental"){
+                location.href="/dental";
+            }else if(param == "deafandblind"){
+                location.href="/deafandblind";
+            }
+        }
+    </script>
+
 </html>
