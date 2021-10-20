@@ -18,7 +18,7 @@ def donate(request):
 def meal(request):
     return render(request, 'frontend/mealtrain.html')
 def pande(request):
-    return render(request, 'frontend/pandemictimes.html')
+    return render(request, 'frontend/aboutUs/pandemictimes.html')
 def peer(request):
     return render(request, 'frontend/peertutoring.html')
 def publica(request):
@@ -30,11 +30,11 @@ def sing(request):
 def branch(request):
     return render(request, 'frontend/branches.html')
 def dental(request):
-    return render(request, 'frontend/dental.html')
+    return render(request, 'frontend/aboutUs/dental.html')
 def deaf(request):
-    return render(request, 'frontend/deafandblind.html')
+    return render(request, 'frontend/aboutUs/deafandblind.html')
 def indiv(request):
-    return render(request, 'frontend/individal.html')
+    return render(request, 'frontend/aboutUs/individal.html')
 def ptimes(request):
     return render(request, 'frontend/ptimes.html')
 def vol(request):
