@@ -200,7 +200,16 @@ br.mo {display: none;}
     section.subheader{margin-top:10%;}
     section.subheader .subheaderTitle{font-size: 30px; color:#9B1D4F; text-align: center;}
     section.subheader img {width:100%;}
-    section.subheader .des{font-size: 15px; position:relative; margin:5%;} 
+    section.subheader .des{font-size: 15px; position:relative; margin:5%;}
+
+    /*team Member*/
+    section.subheaderTeam{margin-top:10%;}
+    section.subheaderTeam table{width:100%;border-collapse: collapse;}
+    section.subheaderTeam table tr.other{width:100%; background-color: #F2F2F2;}
+    section.subheaderTeam .pictures{width: 20vh; height: 20vh; margin: 7%;}
+    section.subheaderTeam .name1{margin:5%; font-weight: 700; font-size: 25px;}
+    section.subheaderTeam .name1 b{font-weight: 900;}
+    section.subheaderTeam .name2{margin-left: 5%; color:darkgray; font-size: 25px;}
 
     /*header*/
     header {height: 60px; line-height: 60px;padding:0 10px;}
@@ -252,6 +261,16 @@ br.mo {display: none;}
     section.subheader .subheaderTitle{font-size: 30px; color:#9B1D4F; text-align: center;}
     section.subheader img {width:100%;}
     section.subheader .des{font-size: 15px; position:relative; margin:5%;}
+
+    /*team Member*/
+    section.subheaderTeam{margin-top:10%;}
+    section.subheaderTeam table{width:100%;border-collapse: collapse;}
+    section.subheaderTeam table tr.other{width:100%; background-color: #F2F2F2;}
+    section.subheaderTeam .pictures{width: 20vh; height: 20vh; margin: 7%;}
+    section.subheaderTeam .name1{margin-left: 10%; margin-top: 5%; font-weight: 700; font-size: 20px;}
+    section.subheaderTeam .name1 b{font-weight: 900;}
+    section.subheaderTeam .name2{margin-left: 10%; margin-top: 5%; color:darkgray; font-size: 20px;}
+
    /*visual */
     section.visual .menu {display: none; width: 0; height: 0;}
     section.visual .img {width: 100%;}
@@ -346,7 +365,16 @@ br.mo {display: none;}
     section.subheader{margin-top:20%;}
     section.subheader .subheaderTitle{font-size: 30px; color:#9B1D4F; text-align: center;}
     section.subheader img {width:100%;}
-    section.subheader .des{font-size: 15px; position:relative; margin:5%;} 
+    section.subheader .des{font-size: 15px; position:relative; margin:5%;}
+
+    /*team Member*/
+    section.subheaderTeam{margin-top:20%;}
+    section.subheaderTeam table{width:100%;border-collapse: collapse;}
+    section.subheaderTeam table tr.other{width:100%; background-color: #F2F2F2;}
+    section.subheaderTeam .pictures{width: 20vh; height: 20vh; margin: 7%;}
+    section.subheaderTeam .name1{margin:7%; font-weight: 700; font-size: 10px;}
+    section.subheaderTeam .name1 b{font-weight: 900;}
+    section.subheaderTeam .name2{margin: 7%; color:darkgray; font-size: 10px;}
 
     /*visual*/
     section.visual {height: 40vh; overflow: hidden;}
