@@ -41,6 +41,8 @@ def vol(request):
     return render(request,'frontend/C19response.html')
 def volunteering(request):
     return render(request,'frontend/volunteering.html')
+def team(request):
+    return render(request,'frontend/teammembers.html')
 def join(request):
     # print("join 실행")
     if request.method== 'POST': #form이 post로 던지면 여기서 처리
