@@ -211,6 +211,29 @@ br.mo {display: none;}
     section.subheaderTeam .name1 b{font-weight: 900;}
     section.subheaderTeam .name2{margin-left: 5%; color:darkgray; font-size: 25px;}
 
+    
+    /*volunteering*/
+    section.visual3 {margin-top: 4vh; padding-bottom: 7vh; position: relative; background-color: #AD446E;}
+    section.visual1 {padding-bottom: 7vh; position: relative;}
+    section .visual5{
+        background: white;
+        font-weight: bold; 
+        padding: 3% 17%;
+        color: gray;
+        text-align: center;
+        font-size: 25px;
+        float: right;
+    }
+    section.visual3 .visual4{
+        background: #AD446E;
+        font-weight: bold;
+        padding : 3% 13%;
+        color: #fff;
+        text-align: center;
+        font-size: 25px;
+        float: left;
+    }
+
     /*header*/
     header {height: 60px; line-height: 60px;padding:0 10px;}
     header .open {display: block; float: right;font-size: 32px; height: 60px; padding-top: 5px; box-sizing: border-box;}
@@ -270,6 +293,28 @@ br.mo {display: none;}
     section.subheaderTeam .name1{margin-left: 10%; margin-top: 5%; font-weight: 700; font-size: 20px;}
     section.subheaderTeam .name1 b{font-weight: 900;}
     section.subheaderTeam .name2{margin-left: 10%; margin-top: 5%; color:darkgray; font-size: 20px;}
+
+    /*volunteering*/
+    section.visual3 {margin-top: 6vh; padding-bottom: 7vh; position: relative; background-color: #AD446E;}
+    section.visual1 {padding-bottom: 7vh; position: relative;}
+    section .visual5{
+        background: white;
+        font-weight: bold; 
+        padding: 3% 17%;
+        color: gray;
+        text-align: center;
+        font-size: 17px;
+        float: right;
+    }
+    section.visual3 .visual4{
+        background: #AD446E;
+        font-weight: bold;
+        padding : 2% 13%;
+        color: #fff;
+        text-align: center;
+        font-size: 17px;
+        float: left;
+    }
 
    /*visual */
     section.visual .menu {display: none; width: 0; height: 0;}
@@ -376,6 +421,28 @@ br.mo {display: none;}
     section.subheaderTeam .name1 b{font-weight: 900;}
     section.subheaderTeam .name2{margin: 7%; color:darkgray; font-size: 10px;}
 
+    /*volunteering*/
+    section.visual3 {margin-top: 8vh; padding-bottom: 7vh; position: relative; background-color: #AD446E;}
+    section.visual1 {padding-bottom: 7vh; position: relative;}
+    section .visual5{
+        background: white;
+        font-weight: bold; 
+        padding: 3% 6%;
+        color: gray;
+        text-align: center;
+        font-size: 17px;
+        float: right;
+    }
+    section.visual3 .visual4{
+        background: #AD446E;
+        font-weight: bold;
+        padding : 3%;
+        color: #fff;
+        text-align: center;
+        font-size: 17px;
+        float: left;
+    }
+
     /*visual*/
     section.visual {height: 40vh; overflow: hidden;}
     section.visual .img {width: auto;}
@@ -460,6 +527,28 @@ br.mo {display: none;}
     section.visual .title p {font-size: 11px;}
     section.visual .img .page img {width: 55%; margin-left: 15%;}
     .slick-dots li button {height: 8px;margin-bottom: 15px;}
+
+    /*volunteering*/
+    section.visual3 {margin-top: 12vh; padding-bottom: 8vh; position: relative; background-color: #AD446E;}
+    section.visual1 {padding-bottom: 8vh; position: relative;}
+    section .visual5{
+        background: white;
+        font-weight: bold;
+        padding :3%;
+        color: gray;
+        text-align: center;
+        font-size: 17px;
+        float: right;
+    }
+    section.visual3 .visual4{
+        background: #AD446E;
+        font-weight: bold;
+        padding : 2%;
+        color: #fff;
+        text-align: center;
+        font-size: 17px;
+        float: left;
+    }
 
     /*about*/
     section.about {height: 480px;}
