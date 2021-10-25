@@ -59,19 +59,44 @@
              </section>
         <hr class="vline" >
         <button class= "b1" onclick= "location.href='/mealtrain'">
-            MEAL TRAIN
+            <b>SHARE GIFT MEAL TRAIN</b>
+            <br/>
+            <br/>
+            <span id="covid19More">
+                more
+            </span>
         </button>
         <button class= "b2" onclick= "location.href='/donate'">
-            HANDLESS HANDLE DONATION
+            <b>COVID19 HANDLESS HANDLE DONATION</b>
+            <br/>
+            <br/>
+            <span id="covid19MoreRight">
+                more
+            </span>
         </button>
         <button class= "b3" onclick= "location.href='/peertutoring'">
-            PEER TUTORING
+            <b>SHARE GIFT PEER TUTORING</b>
+            <br/>
+            <br/>
+            <span id="covid19More">
+                more
+            </span>
         </button>
         <button class= "b4" onclick= "location.href='/pandemictimes'">
-            PANDEMIC TIMES NEWS
+            <b>THE PANDEMIC TIMES NEWSPAPER</b>
+            <br/>
+            <br/>
+            <span id="covid19MoreRight">
+                more
+            </span>
         </button>
         <button class= "b5" onclick= "location.href='/christmas'">
-            CHRISTMAS GIFT TRAIN
+            <b>SHARE GIFT CHRISTMAS GIFT TRAIN</b>
+            <br/>
+            <br/>
+            <span id="covid19More">
+                more
+            </span>
         </button>
         </div>
     </div>    
@@ -81,34 +106,31 @@
         .but1{position: relative; left:20%; top: 1%;}
         .writing{font-size: 120%;margin-left: 10%; margin-right: 5%;}
          .images{position: relative; left:3vh}
-        .vline{position: absolute; top: 10%;left:50%;bottom:0;margin:0;border:none; border-right: solid 10px blue;z-index:-1; size: 80%; overflow: hidden;}
-        .b1{z-index: 5;position: fixed; top:20%; left:15%; width: 60%; height: 10%; background-color: #6e73cbff;  color: white}
-        .b2{z-index: 5;position: fixed; top:35%; right:15%; width: 60%; height: 10%;  }
-        .b3{z-index: 5;position:fixed; top: 50%; left:15%; width: 60%; height: 10%; background-color: #6e73cbff; color: white}
-        .b4{z-index: 5;position:fixed; top: 65%; right:15%; width: 60%; height: 10%;}
-        .b5{z-index: 5;position:fixed; top: 80%; left:15%; width: 60%; height: 10%; background-color: #6e73cbff; color: white}
+        .vline{position: absolute; top: 10%;left:50%;bottom:0;margin:0;border:none; border-right: solid 3px #6e73cb ;z-index:-1; size: 80%; overflow: hidden;}
+        .b1{z-index: 5;position: relative; top:20%; width: 80%; height: 10%; padding: 8% 0; margin:0 0 5% 0; background-color: #6e73cb;  color: white; border: 0; text-align: center;}
+        .b2{z-index: 5; top:35%; float:right; width: 80%; height: 10%; padding: 8% 0; margin:5% 0; border: 0; background-color:#E7E6E6; color:black;  text-align: center;}
+        .b3{z-index: 5;position:relative; top: 50%; width: 80%; height: 10%; padding: 8% 0; margin:5% 0; background-color: #6e73cb; color: white; border: 0;  text-align: center;}
+        .b4{z-index: 5; top: 65%; float:right; width: 80%; height: 10%; padding: 8% 0; margin:5% 0; border: 0;background-color:#E7E6E6; text-align: center;}
+        .b5{z-index: 5;position:relative; top: 80%; width: 80%; height: 10%; padding: 8% 0; margin:5% 0; background-color: #6e73cb; color: white; border: 0; text-align: center;}
+            /* covid 19 */
+        #covid19More{
+            border: 2px solid #FFD966;
+            outline:0;
+            color:#FFD966;
+            background: #6e73cb;
+            border-radius: 12px;
+            padding: 0 2%;
+        }
+        #covid19MoreRight{
+            border: 2px solid #6e73cb;
+            outline:0;
+            color:#6e73cb;
+            background: #E7E6E6;
+            border-radius: 12px;
+            padding: 0 2%;
+        }
    </style>
     <style>
-        section.visual3 {margin-top: 60px; padding-bottom: 50px; position: relative; background-color: white;}
-        section.visual1 {padding-bottom: 50px; position: relative;}
-        .visual4{
-            background: white;
-            font-weight: bold;
-            padding : 3%;
-            color: gray;
-            text-align: center;
-            font-size: 17px;
-            float: left;
-        }
-        .visual5{
-            background: #AD446E;
-            font-weight: bold; 
-            padding: 3% 6%;
-            color: #fff;
-            text-align: center;
-            font-size: 17px;
-            float: right;
-        }
         .visual2{
             background: white;
             font-weight: bold; 
