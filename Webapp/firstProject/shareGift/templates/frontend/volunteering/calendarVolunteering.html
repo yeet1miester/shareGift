@@ -36,7 +36,7 @@
                     <li><a href="/branches">Branches</a></li>
                     <li><a href="/volunteering">Volunteering</a></li>
                     <!-- <li><a href="#">Journal</a></li> -->
-                    <li><a href="/response">Covid-19 response</a></li>
+                    <li><a href="/covid19">Covid-19 response</a></li>
                     <hr/>
                     <li>
                         {% if user.is_authenticated %}
@@ -57,7 +57,7 @@
                 color: #fff;
             ">Volunteering</a>
             </div>
-            <div class="visual5">
+            <div class="visual5" onclick="location.href='/covid19'">
                 Covid-19 response
             </div>
         </section>
@@ -109,26 +109,6 @@
     }
     .headerStyle {
         font-weight: bold;
-    }
-    section.visual3 {margin-top: 60px; padding-bottom: 50px; position: relative; background-color: #AD446E;}
-    section.visual1 {padding-bottom: 50px; position: relative;}
-    .visual4{
-        background: #AD446E;
-        font-weight: bold;
-        padding : 3%;
-        color: #fff;
-        text-align: center;
-        font-size: 17px;
-        float: left;
-    }
-    .visual5{
-        background: white;
-        font-weight: bold; 
-        padding: 3% 6%;
-        color: gray;
-        text-align: center;
-        font-size: 17px;
-        float: right;
     }
     .visual2{
         background: #AD446E;

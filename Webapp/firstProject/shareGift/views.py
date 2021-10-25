@@ -7,8 +7,8 @@ def home(request):
     return render(request, 'frontend/base.html')
 def about(request):
     return render(request, 'frontend/aboutus.html')
-def response(request):
-    return render(request, 'frontend/C19response.html')
+def covid19(request):
+    return render(request, 'frontend/volunteering/C19response.html')
 def baek(request):
     return render(request, 'frontend/baekhyun.html')
 def christ(request):
@@ -40,7 +40,7 @@ def ptimes(request):
 def vol(request):
     return render(request,'frontend/C19response.html')
 def volunteering(request):
-    return render(request,'frontend/volunteering.html')
+    return render(request,'frontend/volunteering/volunteering.html')
 def team(request):
     return render(request,'frontend/teammembers.html')
 def join(request):
@@ -91,6 +91,6 @@ def calendar(request):
         rsvpDetail = get_object_or_404(RSVP, pk=id) #데이터 받아오기
         rsvpDetail.count -= 1
         rsvpDetail.save()
-        return render(request, 'frontend/volunteering.html')
+        return render(request, 'frontend/volunteering/volunteering.html')
     else:
-        return render(request, 'frontend/calendarVolunteering.html', {'rsvp':rsvp})
+        return render(request, 'frontend/volunteering/calendarVolunteering.html', {'rsvp':rsvp})

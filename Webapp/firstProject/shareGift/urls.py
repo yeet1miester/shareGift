@@ -18,8 +18,9 @@ from django.urls import path, include
 from .import views  
 urlpatterns = [
     path('', views.home, name= 'home'),
+    # about us
     path('aboutus/', views.about, name= 'AboutUs'),
-    path('response/', views.response, name="response"),
+    
     path('baekhyun/', views.baek, name="response"),
     path('branches/', views.branch, name="branch"),
     path('christmas/', views.christ, name="christ"),
@@ -34,10 +35,16 @@ urlpatterns = [
     path('deafandblind/',views.deaf,name="deafandblind"),
     path('individual/', views.indiv,name="individual"),
     path('ptimes/', views.ptimes, name ="ptimes"),
+
+    # volunteering
     path('volunteering/', views.volunteering, name ="volunteering"),
+    path('calendar/', views.calendar, name='calendar'),
+    path('covid19/', views.covid19, name="covid19"),
+
+    #login
     path('join/', views.join, name ="join"),
     path('login/', views.login, name ="login"),
     path('logout/', views.logout, name='logout'),
-    path('calendar/', views.calendar, name='calendar'),
+
     path('team/', views.team, name='team'),
 ]
