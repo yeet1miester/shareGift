@@ -211,7 +211,6 @@ br.mo {display: none;}
     section.subheaderTeam .name1 b{font-weight: 900;}
     section.subheaderTeam .name2{margin-left: 5%; color:darkgray; font-size: 25px;}
 
-    
     /*volunteering*/
     section.visual3 {margin-top: 4vh; padding-bottom: 7vh; position: relative; background-color: #AD446E;}
     section.visual1 {padding-bottom: 7vh; position: relative;}
@@ -232,6 +231,12 @@ br.mo {display: none;}
         text-align: center;
         font-size: 25px;
         float: left;
+    }
+
+    /*publications*/
+    .card-img-top{
+        height: 30rem;
+        object-fit: cover;
     }
 
     /*header*/
@@ -314,6 +319,12 @@ br.mo {display: none;}
         text-align: center;
         font-size: 17px;
         float: left;
+    }
+
+    /*publications*/
+    .card-img-top{
+        height: 30rem;
+        object-fit: cover;
     }
 
    /*visual */
@@ -441,6 +452,12 @@ br.mo {display: none;}
         text-align: center;
         font-size: 17px;
         float: left;
+    }
+
+    /*publications*/
+    .card-img-top{
+        height: 15rem;
+        object-fit: cover;
     }
 
     /*visual*/
