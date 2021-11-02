@@ -196,6 +196,10 @@ br.mo {display: none;}
 @media screen and (max-width:1100px){
     .wrap {min-width: 100%;}
 
+    /*meal train*/
+    .covidTitlePurple{margin-top: 4vh; color:white; background-color: #6e73cb; padding:10%; font-size: 2rem;}
+    .imageSlide img { height:20vh; width:auto; margin:1%;}
+
     /*indivial*/
     section.subheader{margin-top:10%;}
     section.subheader .subheaderTitle{font-size: 30px; color:#9B1D4F; text-align: center;}
@@ -284,6 +288,11 @@ br.mo {display: none;}
 
 /*950px 이하 - 751px 테블릿 참고*/
 @media screen and (max-width:950px){
+
+    /*meal train*/
+    .covidTitlePurple{margin-top: 4vh; color:white; background-color: #6e73cb; padding:10%; font-size: 2rem;}
+    .imageSlide img { height:20vh; width:auto; margin:1%;}
+
     /*indivial*/
     section.subheader{margin-top:10%;}
     section.subheader .subheaderTitle{font-size: 30px; color:#9B1D4F; text-align: center;}
@@ -417,6 +426,11 @@ br.mo {display: none;}
 }
 /* 750px 이하 - 모바일 디바이스 체크 */
 @media screen and (max-width:750px){
+
+    /*meal train*/
+    .covidTitlePurple{margin-top: 8vh; color:white; background-color: #6e73cb; padding:10%; font-size: 1.5rem;}
+    .imageSlide img { height:40vh; width:auto; margin:0.3%;}
+
     /*indivial*/
     section.subheader{margin-top:20%;}
     section.subheader .subheaderTitle{font-size: 30px; color:#9B1D4F; text-align: center;}

@@ -7,9 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0, maximum-scale=1.0">
     <link rel="stylesheet" href="{% static 'css/main.css' %}">
     <!--font-->
-<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
-<link rel="stylesheet" href="{% static 'css/slick.css' %}">
-<link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css">
+    <link rel="stylesheet" href="{% static 'css/slick.css' %}">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
 
 
 <!--script-->
@@ -64,45 +66,73 @@
                 </nav>
 
             </header>
-        <div class= "subheader">
-        <br>
-        <br>
         <div>
-            MEAL TRAIN
-        </div>
-        <br>
-        <br>
+            <div class= "covidTitlePurple">
+                <h1 class="title">SHARE GIFT MEAL TRAIN</h1>
+            </div>
         </div>
         <br>
         <br>
         <br>
         <div class= "writing">
-            The COVID-19 has disrupted our lives and the most vulnerable people are low income families and senior patients. <br> 
-            The medical workers at our local senior hospital, Cupertino Healthcare and Wellness Center can use our love <br> 
-            as they serve on the front lines with patients and lonely, senior patients. <br> 
-            Share Gift has helped out senior patients over the past three years, however, it has been limited since April, 2020. <br> 
+            The COVID-19 has disrupted our lives and the most vulnerable people are low income families and senior patients. 
+            The medical workers at our local senior hospital, Cupertino Healthcare and Wellness Center can use our love
+            as they serve on the front lines with patients and lonely, senior patients.
+            Share Gift has helped out senior patients over the past three years, however, it has been limited since April, 2020.
             Share Gift purchased food for the staff and patients at Cupertino Healthcare and donated First Aid Kits to Rota Care Free Medical Clinic.<br> 
         </div>
         <br>
         <br>
         <br>
-        <div class="images">
+        <!-- <div class="images">
         <img src="{% static 'img/사진-19.jpg'%}" width= "320vh" height = "260vh" >
-        <img src="{% static 'img\사진-18.jpg'%}" width= "260vh" height = "260vh" >
-        <img src="{% static 'img\사진-19.jpg'%}" width="260vh" height="260vh">
-        </div> 
-        <button class="next" onclick = "location.href='/donate'">
+        <img src="{% static 'img/사진-18.jpg'%}" width= "260vh" height = "260vh" >
+        <img src="{% static 'img/사진-19.jpg'%}" width="260vh" height="260vh">
+        </div>  -->
+        <!-- <button class="next" onclick = "location.href='/donate'">
             Next
-        </button>  
-        </div> 
+        </button>   -->
+        </div>
+        <div class="imageSlide">
+            <img src="{% static 'img/사진-19.jpg'%}">
+            <img src="{% static 'img/사진-18.jpg'%}">
+            <img src="{% static 'img/사진-17.jpg'%}">
+        </div>
     </body>
  <style>
     .header{text-align:center; position:relative;  margin-bottom: 10px; border-bottom: solid salmon; }
     .but{position: relative; right:18%; top: 1%;}
     .but1{position: relative; left:20%; top: 1%;}
-    .subheader{ font-size: 200%;color:black; background-color: #e7e6e6ff;}
-    .writing{font-size: 120%;margin-left: 10%; margin-right: 5%;}
-     .images{position: relative; left:3vh}
+    /* .covidTitlePurple{margin-top: 8vh; color:white; background-color: #6e73cb; padding:10%; font-size: 1.5rem;} */
+    .writing{margin-left: 10%; margin-right: 5%;}
+    /* .imageSlide img { height:40vh; width:auto;} */
      .next{position:relative; top:10%; left:60%; width: 20vh; height:10vh; font-size: 200%;}
 </style>
+<script type="text/javascript">
+    $('.imageSlide').slick({
+        centerMode: true,
+        centerPadding: '60px',
+        slidesToShow: 3,
+        responsive: [
+            {
+            breakpoint: 768,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 3
+            }
+            },
+            {
+            breakpoint: 480,
+            settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1
+            }
+            }
+        ]
+    });
+</script>
 </html>
