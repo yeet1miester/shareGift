@@ -8,19 +8,19 @@ def home(request):
 def about(request):
     return render(request, 'frontend/aboutus.html')
 def covid19(request):
-    return render(request, 'frontend/volunteering/C19response.html')
+    return render(request, 'frontend/covid19/C19response.html')
 def baek(request):
     return render(request, 'frontend/baekhyun.html')
 def christ(request):
     return render(request, 'frontend/christmasgifttrain.html')
 def donate(request):
-    return render(request, 'frontend/COVID19donate.html')
+    return render(request, 'frontend/covid19/COVID19donate.html')
 def meal(request):
-    return render(request, 'frontend/mealtrain.html')
+    return render(request, 'frontend/covid19/mealtrain.html')
 def pande(request):
-    return render(request, 'frontend/aboutUs/pandemictimes.html')
+    return render(request, 'frontend/covid19/pandemictimes.html')
 def peer(request):
-    return render(request, 'frontend/peertutoring.html')
+    return render(request, 'frontend/covid19/peertutoring.html')
 def publica(request):
     return render(request, 'frontend/publications.html')
 def seoul(request):
@@ -36,9 +36,7 @@ def deaf(request):
 def indiv(request):
     return render(request, 'frontend/aboutUs/individal.html')
 def ptimes(request):
-    return render(request, 'frontend/ptimes.html')
-def vol(request):
-    return render(request,'frontend/C19response.html')
+    return render(request, 'frontend/aboutus/ptimes.html')
 def volunteering(request):
     return render(request,'frontend/volunteering/volunteering.html')
 def team(request):
