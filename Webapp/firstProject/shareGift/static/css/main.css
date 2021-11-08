@@ -190,6 +190,7 @@ header .close {display: none;}
 
 /*모바일용 줄바꿈*/
 br.mo {display: none;}
+.moreButton{background-color:#FFD966; padding:2%; outline:0; border-radius:12px; border:1px solid #FFD966;}
 
 /*반응형 시작*/
 /*테블릿모드 : 1100px이하~ 951px*/
