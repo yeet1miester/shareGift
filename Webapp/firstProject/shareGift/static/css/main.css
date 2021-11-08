@@ -200,7 +200,7 @@ br.mo {display: none;}
     /*covid19*/
     .covidTitlePurple{margin-top: 4vh; color:white; background-color: #6e73cb; padding:10%; font-size: 2rem;}
     .imageSlide img { height:20vh; width:auto; margin:1%;}
-    .covidTitlePurple{margin-top: 4vh; color:#3F3F3F; background-color: #E7E6E6; padding:10%; font-size: 2rem;}
+    .covidTitleGray{margin-top: 4vh; color:#3F3F3F; background-color: #E7E6E6; padding:10%; font-size: 2rem;}
 
     /*indivial*/
     section.subheader{margin-top:10%;}
