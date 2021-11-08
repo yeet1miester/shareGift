@@ -12,7 +12,7 @@ def covid19(request):
 def baek(request):
     return render(request, 'frontend/baekhyun.html')
 def christ(request):
-    return render(request, 'frontend/christmasgifttrain.html')
+    return render(request, 'frontend/covid19/christmasgifttrain.html')
 def donate(request):
     return render(request, 'frontend/covid19/COVID19donate.html')
 def meal(request):
