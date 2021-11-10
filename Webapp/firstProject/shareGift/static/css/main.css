@@ -202,6 +202,9 @@ br.mo {display: none;}
     .branchTitlePurple h1.title{font-size: 4rem;}
     .branchTitlePurple p.subTitle{font-size: 2.5rem;}
     .branchWriting{margin: 6%; font-size: 2rem;}
+    .branchTitleGray{margin-top: 6vh; color:#3F3F3F; background-color: #E7E6E6; padding:10%; padding-bottom: 20%;}
+    .branchTitleGray h1.title{font-size: 4rem;}
+    .branchTitleGray p.subTitle{font-size: 2.5rem;}
 
     /*covid19*/
     .covidTitlePurple{margin-top: 4vh; color:white; background-color: #6e73cb; padding:10%; font-size: 2rem;}
@@ -302,6 +305,9 @@ br.mo {display: none;}
     .branchTitlePurple h1.title{font-size: 3rem;}
     .branchTitlePurple p.subTitle{font-size: 2rem;}
     .branchWriting{margin: 6%; font-size: 1.5rem;}
+    .branchTitleGray{margin-top: 9vh; color:#3F3F3F; background-color: #E7E6E6; padding:10%; padding-bottom: 20%;}
+    .branchTitleGray h1.title{font-size: 3rem;}
+    .branchTitleGray p.subTitle{font-size: 2rem;}
 
     /*covid19*/
     .covidTitlePurple{margin-top: 4vh; color:white; background-color: #6e73cb; padding:10%; font-size: 2rem;}
@@ -452,6 +458,10 @@ br.mo {display: none;}
     .branchTitlePurple h1.title{font-size: 2rem;}
     .branchTitlePurple p.subTitle{font-size: 1rem;}
     .branchWriting{margin: 6%; font-size: 0.9rem;}
+
+    .branchTitleGray{margin-top: 13vh; color:#3F3F3F; background-color: #E7E6E6; padding:10%; padding-bottom: 20%;}
+    .branchTitleGray h1.title{font-size: 2rem;}
+    .branchTitleGray p.subTitle{font-size: 1rem;}
 
     /*indivial*/
     section.subheader{margin-top:20%;}
