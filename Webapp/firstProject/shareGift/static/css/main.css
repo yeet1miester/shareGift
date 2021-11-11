@@ -553,7 +553,8 @@ br.mo {display: none;}
     section.visual3 .visual4About{
         background: #AD446E;
         font-weight: bold;
-        padding : 3% 10%;
+        padding-left: 10%;
+        padding-top: 4%;
         color: #fff;
         text-align: center;
         font-size: 17px;
