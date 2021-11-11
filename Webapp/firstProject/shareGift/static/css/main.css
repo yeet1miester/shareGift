@@ -197,6 +197,27 @@ br.mo {display: none;}
 @media screen and (max-width:1100px){
     .wrap {min-width: 100%;}
 
+    /*about Us*/
+    section.visual3 .visual4About{
+        background: #AD446E;
+        font-weight: bold;
+        padding : 3% 15%;
+        color: #fff;
+        text-align: center;
+        font-size: 17px;
+        float: left;
+    }
+
+    section .visual5Team{
+        background: white;
+        font-weight: bold; 
+        padding: 3% 23%;
+        color: gray;
+        text-align: center;
+        font-size: 17px;
+        float: right;
+    }
+
     /*Branch*/
     .branchTitlePurple{margin-top: 6vh; color:#fff; background-color: #ad446eff; padding:10%; padding-bottom: 20%;}
     .branchTitlePurple h1.title{font-size: 4rem;}
@@ -227,7 +248,7 @@ br.mo {display: none;}
     section.subheaderTeam .name2{margin-left: 5%; color:darkgray; font-size: 25px;}
 
     /*volunteering*/
-    section.visual3 {margin-top: 4vh; padding-bottom: 7vh; position: relative; background-color: #AD446E;}
+    section.visual3 {margin-top: 4vh; padding-bottom: 6.5vh; position: relative; background-color: #AD446E;}
     section.visual1 {padding-bottom: 7vh; position: relative;}
     section .visual5{
         background: white;
@@ -385,6 +406,28 @@ br.mo {display: none;}
         border: white;
         text-align: center;
     }
+
+    /*about Us*/
+    section.visual3 .visual4About{
+        background: #AD446E;
+        font-weight: bold;
+        padding : 3% 15%;
+        color: #fff;
+        text-align: center;
+        font-size: 17px;
+        float: left;
+    }
+
+    section .visual5Team{
+        background: white;
+        font-weight: bold; 
+        padding: 3% 23%;
+        color: gray;
+        text-align: center;
+        font-size: 17px;
+        float: right;
+    }
+
     .Volunteering{
         width:30%; 
         height:15%;
@@ -504,6 +547,27 @@ br.mo {display: none;}
         text-align: center;
         font-size: 17px;
         float: left;
+    }
+
+    /*about Us*/
+    section.visual3 .visual4About{
+        background: #AD446E;
+        font-weight: bold;
+        padding : 3% 10%;
+        color: #fff;
+        text-align: center;
+        font-size: 17px;
+        float: left;
+    }
+
+    section .visual5Team{
+        background: white;
+        font-weight: bold; 
+        padding: 3% 19%;
+        color: gray;
+        text-align: center;
+        font-size: 17px;
+        float: right;
     }
 
     /*publications*/
