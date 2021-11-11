@@ -234,8 +234,8 @@ br.mo {display: none;}
 
     /*indivial*/
     section.subheader{margin-top:10%;}
-    section.subheader .subheaderTitle{font-size: 30px; color:#9B1D4F; text-align: center;}
-    section.subheader img {width:100%;}
+    section.subheader .subheaderTitle{font-size: 40px; color:#9B1D4F; text-align: center;}
+    section.subheader img {width:100%; height: 700px;}
     section.subheader .des{font-size: 15px; position:relative; margin:5%;}
 
     /*team Member*/
@@ -340,8 +340,8 @@ br.mo {display: none;}
 
     /*indivial*/
     section.subheader{margin-top:10%;}
-    section.subheader .subheaderTitle{font-size: 30px; color:#9B1D4F; text-align: center;}
-    section.subheader img {width:100%;}
+    section.subheader .subheaderTitle{font-size: 35px; color:#9B1D4F; text-align: center;}
+    section.subheader img {width:100%; height: 500px;}
     section.subheader .des{font-size: 15px; position:relative; margin:5%;}
 
     /*team Member*/
@@ -514,8 +514,8 @@ br.mo {display: none;}
 
     /*indivial*/
     section.subheader{margin-top:20%;}
-    section.subheader .subheaderTitle{font-size: 30px; color:#9B1D4F; text-align: center;}
-    section.subheader img {width:100%;}
+    section.subheader .subheaderTitle{font-size: 25px; color:#9B1D4F; text-align: center;}
+    section.subheader img {width:100%; height: 300px;}
     section.subheader .des{font-size: 15px; position:relative; margin:5%;}
 
     /*team Member*/
