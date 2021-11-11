@@ -498,9 +498,9 @@ br.mo {display: none;}
 @media screen and (max-width:750px){
 
     /*Covid19*/
-    .covidTitlePurple{margin-top: 8vh; color:white; background-color: #6e73cb; padding:10%; font-size: 1.5rem;}
+    .covidTitlePurple{margin-top: 8vh; color:white; background-color: #6e73cb; padding:10%; font-size: 1.2rem;}
     .imageSlide img { height:40vh; width:auto; margin:0.3%;}
-    .covidTitleGray{margin-top: 8vh; color:#3F3F3F; background-color: #E7E6E6; padding:10%; font-size: 1.5rem;}
+    .covidTitleGray{margin-top: 8vh; color:#3F3F3F; background-color: #E7E6E6; padding:10%; font-size: 1.2rem;}
 
     /*Branch*/
     .branchTitlePurple{margin-top: 13vh; color:#fff; background-color: #ad446eff; padding:10%; padding-bottom: 20%;}
