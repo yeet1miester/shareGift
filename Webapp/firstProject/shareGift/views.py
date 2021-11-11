@@ -37,7 +37,7 @@ def branch(request):
 
 # aboutus
 def about(request):
-    return render(request, 'frontend/aboutus.html')
+    return render(request, 'frontend/aboutUs/aboutus.html')
 def dental(request):
     return render(request, 'frontend/aboutUs/dental.html')
 def deaf(request):
@@ -45,11 +45,9 @@ def deaf(request):
 def indiv(request):
     return render(request, 'frontend/aboutUs/individal.html')
 def ptimes(request):
-    return render(request, 'frontend/aboutus/ptimes.html')
-
-
+    return render(request, 'frontend/aboutUs/ptimes.html')
 def team(request):
-    return render(request,'frontend/teammembers.html')
+    return render(request,'frontend/aboutUs/teammembers.html')
 
 # join, login, logout
 def join(request):
