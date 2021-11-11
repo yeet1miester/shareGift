@@ -248,6 +248,9 @@ br.mo {display: none;}
         float: left;
     }
 
+    section.visual .title h2{font-size: 1.5rem;}
+    section.visual .title p{font-size: 13px;}
+
     /*publications*/
     .card-img-top{
         height: 30rem;
@@ -360,6 +363,9 @@ br.mo {display: none;}
    /*visual */
     section.visual .menu {display: none; width: 0; height: 0;}
     section.visual .img {width: 100%;}
+
+    section.visual .title h2{font-size: 1.5rem;}
+    section.visual .title p{font-size: 13px;}
     
     /*about*/
     section.about {height: 480px;}
