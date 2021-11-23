@@ -232,6 +232,9 @@ br.mo {display: none;}
     .imageSlide img { height:20vh; width:auto; margin:1%;}
     .covidTitleGray{margin-top: 4vh; color:#3F3F3F; background-color: #E7E6E6; padding:10%; font-size: 2rem;}
 
+    /*history*/
+    .historyTitle{margin-top: 4vh;}
+
     /*indivial*/
     section.subheader{margin-top:10%;}
     section.subheader .subheaderTitle{font-size: 40px; color:#9B1D4F; text-align: center;}
@@ -337,6 +340,9 @@ br.mo {display: none;}
     .covidTitlePurple{margin-top: 4vh; color:white; background-color: #6e73cb; padding:10%; font-size: 2rem;}
     .imageSlide img { height:20vh; width:auto; margin:1%;}
     .covidTitleGray{margin-top: 4vh; color:#3F3F3F; background-color: #E7E6E6; padding:10%; font-size: 2rem;}
+
+    /*history*/
+    .historyTitle{margin-top: 4vh;}
 
     /*indivial*/
     section.subheader{margin-top:10%;}
@@ -501,6 +507,9 @@ br.mo {display: none;}
     .covidTitlePurple{margin-top: 8vh; color:white; background-color: #6e73cb; padding:10%; font-size: 1.2rem; text-align: center;}
     .imageSlide img { height:40vh; width:auto; margin:0.3%;}
     .covidTitleGray{margin-top: 8vh; color:#3F3F3F; background-color: #E7E6E6; padding:10%; font-size: 1.2rem;text-align: center;}
+
+    /*history*/
+    .historyTitle{margin-top: 8vh;}
 
     /*Branch*/
     .branchTitlePurple{margin-top: 13vh; color:#fff; background-color: #ad446eff; padding:10%; padding-bottom: 20%;}

@@ -47,4 +47,5 @@ urlpatterns = [
     path('logout/', views.logout, name='logout'),
 
     path('team/', views.team, name='team'),
+    path('history/', views.history, name="history"),
 ]

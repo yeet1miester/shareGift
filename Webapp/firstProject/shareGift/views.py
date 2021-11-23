@@ -49,6 +49,9 @@ def ptimes(request):
 def team(request):
     return render(request,'frontend/aboutUs/teammembers.html')
 
+def history(request):
+    return render(request,'frontend/history.html')
+
 # join, login, logout
 def join(request):
     # print("join 실행")
